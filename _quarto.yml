@@ -1,5 +1,8 @@
 project:
   type: website
+  render: 
+    - "!/examples"
+    - "!README.md"
 
 website:
   title: "Creative coding with Twine"
@@ -15,10 +18,4 @@ format:
     theme: cyborg
     css: styles.css
     toc: true
-
-project: 
-  render: 
-    - "!/examples"
-    - "!README.md"
-
 
