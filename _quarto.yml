@@ -16,5 +16,9 @@ format:
     css: styles.css
     toc: true
 
+project: 
+  render: 
+    - "!/examples"
+    - "!README.md"
 
 
