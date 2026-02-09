@@ -1,0 +1,226 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Getting Started with Twine",
+    "section": "",
+    "text": "Use this guide to make a few basic customizations. There are many more you can find in the Harlowe Documentation and the Twine Cookbook."
+  },
+  {
+    "objectID": "index.html#how-to",
+    "href": "index.html#how-to",
+    "title": "Getting Started with Twine",
+    "section": "How To",
+    "text": "How To\n\nLink between passages\n\nLink syntax uses double brackets: [[passage name]]\nIf you want to display text other than the passage name: [[continue your adventure|passage name]]\n\n\n\nStyle your text\nHarlowe uses macros to style text, following this basic syntax:\n(text-style:\"fade-in-out\")[This text blinks]\n\n(color:pink)[This text is pink]\n\n(text-rotate-z:90)[This text is rotated 90 degrees]\n\n(bg:green)[This text has a green background]\n\n(color:green)+(font:\"courier\")[This text has two style macros applied]\nFor style that will refer to the entire passage, use an open bracket at the end:\n(color:cyan)[=\n    The rest of the passage will be cyan\nYou can also style the entire page using “enchant” macros:\n(enchant:?page,(bg:lime))\n\n\nHide and show content\n\nLink macros can create clickable text that gets replaced by other text (link:\"Click me to reveal\")[This text is revealed]\nYou can display another passage within a passage (useful if you want to repeat bits of code): (show:\"passage\")\nTo go to another passage: (go-to:\"passage\")\nTo display text after a delay: (after:1s)[Wait one second before displaying this]\nYou can create a passage that unveils slowly by embedding choices within choices:\n\nYou are going down (link: \"a passageway\")[an extremely long passageway]\nDo you want to turn left?\n(link:\"yes, let's turn left\")[You turn left and the hallway goes on (link:\"forever\")[for what feels like forever]\nNext you have the option to go (link:\"right\")[right, \nwhich you take, and then you find yourself at another (link: \"fork\")[fork. \nDo you go left or right?\n(link:\"Left\")[You've reached a dead end.]\n(link:\"Right\")[You've reached your destination!]]]]\n\nYou can also create a pop-up that will display before page content: (dialog:[Welcome to my game!],\"OK\")\n\n\n\nIntroduce variety\n\nUse ‘either’ to randomly select a value from a list: The sky is (either:\"blue\", \"pink\", \"orange\", \"green\")\nUse ‘random’ to generate random numbers: Rolling six-sided die: (random: 1,6)\n\n\n\nSet and change variables\n\nTo set a variable: (set: $name to \"Alice\")\nTo display a variable: Hello, $name\nYou can also get user input and store it in a variable: What's your name? (input:2bind $name,\"X\",\"\")\nVariables can also hold numbers: (set: $score to 1)\nAnd you can do math on them: (set: $score to it + 1)\n\n\n\nUse conditionals\nConditional syntax can use variables to introduce game-like elements,\n(if: $score &gt; 10)[You win!!]\n(else:)[You lose.]\n(if: $door is \"locked\")[Sorry, the door is locked]\n(else:)[(go-to:\"door\")]\n\n\nNavigation\nTo include some text or code on every page, create a passage and give it the “header” tag. It will automatically appear at the beginning of each passage. You can also use the “footer” tag to put it at the end of each passage.\nBecause Twine is designed for games, there isn’t much built-in navigation. It can be helpful to use a header or footer to link to a page with more navigation links or guides if a player gets lost."
+  },
+  {
+    "objectID": "slides.html#hypertext",
+    "href": "slides.html#hypertext",
+    "title": "Creative Coding with Twine",
+    "section": "Hypertext!",
+    "text": "Hypertext!\n\nIn the early days of the internet, the idea of ‘hypertext’ revolutionized book forms\nRather than a linear narrative (a scroll) or a sequential but segmented narrative (a book), hypertext enabled new forms of interactivity, multilinearity, and a network-based arrangement\nInternal references (i.e. footnotes and other paratext, Choose-your-own-adventure, etc.) have already done this, but suddenly it was possible at a new scale\nFun fact: Vladimir Nabokov’s Pale Fire (1962) was almost used to demonstrate an early hypertext system in an IBM presentation in 1969"
+  },
+  {
+    "objectID": "slides.html#hypertext-literature",
+    "href": "slides.html#hypertext-literature",
+    "title": "Creative Coding with Twine",
+    "section": "Hypertext Literature",
+    "text": "Hypertext Literature\nAn experimental form of fiction that digs into this multilinearity, mostly early-mid 1990s, distributed via CD-Rom\n\nPatchwork Girl: A Modern Monster by Shelley Jackson\n\n\n“In hypertext, everything is there at once and equally weighted. It is a body whose brain is dispersed throughout the cells, fraught with potential, fragile with indecision, or rather strong in foregoing decisions, the way a vine will bend but a tree can fall down.[7]” - Jackson, “Stitch Bitch: the patchwork girl”, 1997"
+  },
+  {
+    "objectID": "slides.html#so-what",
+    "href": "slides.html#so-what",
+    "title": "Creative Coding with Twine",
+    "section": "So what?",
+    "text": "So what?\n\nAll of the internet is hypertext: context is created by hyperlinks that can be followed backwards and forwards and read in any order\nTwine is designed to make it easy to build interactive fiction without knowing how to code\nIt’s used to create interactive fiction and text-based games that evoke this early hypertext era"
+  },
+  {
+    "objectID": "slides.html#twine",
+    "href": "slides.html#twine",
+    "title": "Creative Coding with Twine",
+    "section": "Twine",
+    "text": "Twine\n\nOpen-source tool for creating interactive fiction, games, and hypertext narratives\nOutput is simple HTML (Hyper Text Markup Language) that can be deployed on any web server\nNo-code editor that uses simple markup\n4 “story formats” that change the functionality and style: we are focusing on Harlowe"
+  },
+  {
+    "objectID": "slides.html#concepts",
+    "href": "slides.html#concepts",
+    "title": "Creative Coding with Twine",
+    "section": "Concepts",
+    "text": "Concepts\n\nMarkup: characters that indicate how data is structured, displayed, and organized\nFunctions: “if this then this” - takes input and produces output"
+  },
+  {
+    "objectID": "slides.html#before-we-begin",
+    "href": "slides.html#before-we-begin",
+    "title": "Creative Coding with Twine",
+    "section": "Before we begin",
+    "text": "Before we begin\n\nStory format options\n\nHarlowe - default format. This is what we are using for this workshop.\nChapbook - also beginner-friendly\nSugarCube & Snowman - designed for advanced users and more customization\n\nYou can download the application or use it in browser (if you use it in browser, backup and save often)\nYou can also use a text editor and a markup language called “Twee”"
+  },
+  {
+    "objectID": "slides.html#story-formats",
+    "href": "slides.html#story-formats",
+    "title": "Creative Coding with Twine",
+    "section": "Story formats",
+    "text": "Story formats\n\nFrom the story editor, select ‘Details’ and select ‘Harlowe 3.3.9’\nOther options:\n\nChapbook - also beginner-friendly\nSugarCube & Snowman - designed for advanced users and more customization"
+  },
+  {
+    "objectID": "slides.html#vocab",
+    "href": "slides.html#vocab",
+    "title": "Creative Coding with Twine",
+    "section": "Vocab",
+    "text": "Vocab\n\nMarkup - How data is structured, displayed, organized\nStory - Twine project, website, or game\nPassage - A contained section of a Twine story that can be linked to\nMacro - A ‘function’ or bit of code used to enhance text functionality, indicated with parentheses\nHook - the passage of text that a macro acts on, indicated with square brackets (font: \"Arial\")[This text will be in Arial.]\nVariable - A container for values and words that can change within the game (set: $myName to \"Alice\") Hello, $myName!\n\nFunction - “if this then this” - takes input and produces output"
+  },
+  {
+    "objectID": "slides.html#usage-examples",
+    "href": "slides.html#usage-examples",
+    "title": "Creative Coding with Twine",
+    "section": "Usage examples",
+    "text": "Usage examples\nGo to the how-to section of the home page for more\n(link: \"Click here please\")[Thank you for clicking!]\n(display: \"Cellar\") &lt;!-- Display a passage --&gt;\n(set: $points to it + 1)\nThe weather was (either: \"snowy\", \"rainy\", \"sunny\")"
+  },
+  {
+    "objectID": "slides.html#variables",
+    "href": "slides.html#variables",
+    "title": "Creative Coding with Twine",
+    "section": "Variables",
+    "text": "Variables\n\n(either:)\n(set: $points to it + 1)"
+  },
+  {
+    "objectID": "slides.html#examples",
+    "href": "slides.html#examples",
+    "title": "Creative Coding with Twine",
+    "section": "Examples",
+    "text": "Examples\n\nOpen Sorcery and its sequel Open Sorcery Sea++\n16 Ways to Kill a Vampire at McDonalds\n\nOther tools\n\nInform7\nTexture\nHosted Games\nOther options here: Tools and Resources for Making Games"
+  },
+  {
+    "objectID": "slides.html#getting-started",
+    "href": "slides.html#getting-started",
+    "title": "Creative Coding with Twine",
+    "section": "Getting started",
+    "text": "Getting started\n\nNavigate to https://twinery.org/\nClick ‘Use in your browser’\nIn the top-left corner, click + New and give your story a name\nThe editor has an overall map with a single passage – double click to edit\nEnter some text and rename your passage\nClick Test From Here to preview your game in a new tab"
+  },
+  {
+    "objectID": "slides.html#basics",
+    "href": "slides.html#basics",
+    "title": "Creative Coding with Twine",
+    "section": "Basics",
+    "text": "Basics\n\nLink to a new passage using double square brackets [[pasage name]]\nUse hash marks to create headers: # Header 1 and ## Header 2\nUse ** for **bold** and * for *italic*\nUse the WYSIWYG editor for other types of customizations"
+  },
+  {
+    "objectID": "slides.html#tips",
+    "href": "slides.html#tips",
+    "title": "Creative Coding with Twine",
+    "section": "Tips",
+    "text": "Tips\n\nPreview your work often to make sure the functionality is what you want\nExport your work often to save it somewhere safe\nCreate an outline or storyboard before you try to build complex functionality\nTo check your story format: from the story editor, select ‘Details’ and select ‘Harlowe 3.3.9’"
+  },
+  {
+    "objectID": "slides.html#your-turn",
+    "href": "slides.html#your-turn",
+    "title": "Creative Coding with Twine",
+    "section": "Your turn!",
+    "text": "Your turn!\nCreate a few passages and practice linking between them. Explore the editor interface options to try out more complex stuf."
+  },
+  {
+    "objectID": "slides.html#things-to-try",
+    "href": "slides.html#things-to-try",
+    "title": "Creative Coding with Twine",
+    "section": "Things to try",
+    "text": "Things to try\n\nStyle customizations\nHide and show page content with links\nVariety and randomness\nVariables and conditionals"
+  },
+  {
+    "objectID": "slides.html#macros",
+    "href": "slides.html#macros",
+    "title": "Creative Coding with Twine",
+    "section": "Macros",
+    "text": "Macros\nYou can create macros using buttons in the main editor or by using text markup\n\nChange the background - (bg:purple)[Text]\nChange the text color - (color:yellow)[Text that is yellow]\nAdd some whimsy - (text-style:\"shudder\")[Text that moves]"
+  },
+  {
+    "objectID": "slides.html#advanced-style",
+    "href": "slides.html#advanced-style",
+    "title": "Creative Coding with Twine",
+    "section": "Advanced: Style",
+    "text": "Advanced: Style\n\nIf you have some experience with CSS, you can apply style to the whole story by going to Story -&gt; Stylesheet\nUse CSS selectors tw-passage tw-story and tw-link to apply style changes to your entire site\nMacros are recommmended for this purpose see these instructions"
+  },
+  {
+    "objectID": "slides.html#options",
+    "href": "slides.html#options",
+    "title": "Creative Coding with Twine",
+    "section": "Options",
+    "text": "Options\n\nDomain of One’s Own - digital.brynmawr.edu - webhosting for BMC (Haverford Sites for HC)\nGitHub Pages - github.com -"
+  },
+  {
+    "objectID": "slides.html#export-your-game",
+    "href": "slides.html#export-your-game",
+    "title": "Creative Coding with Twine",
+    "section": "Export your game",
+    "text": "Export your game\n\nFrom the Twine top menu, go to Build -&gt; Publish to File to export your game as html\nOpen it in a browser app to play it locally"
+  },
+  {
+    "objectID": "slides.html#filenames",
+    "href": "slides.html#filenames",
+    "title": "Creative Coding with Twine",
+    "section": "Filenames",
+    "text": "Filenames\n\nBy default, the filename of your game will include the title\nEdit the filename so it has no spaces in it - this will be part of your URL\nPro tip: change the filename to index.html"
+  },
+  {
+    "objectID": "slides.html#domain-of-ones-own",
+    "href": "slides.html#domain-of-ones-own",
+    "title": "Creative Coding with Twine",
+    "section": "Domain of One’s Own",
+    "text": "Domain of One’s Own\n\nNavigate to digital.brynmawr.edu and click on “Get Started” to log in\nIf you haven’t already, choose a domain name that is relatively short and unique\nFrom your Dashboard, locate the “File Manager”\nLocate the folder called “public_html”\nCreate a new sub-folder called “game”\nUpload your game to the “game” folder"
+  },
+  {
+    "objectID": "slides.html#sharing-your-game",
+    "href": "slides.html#sharing-your-game",
+    "title": "Creative Coding with Twine",
+    "section": "Sharing your game",
+    "text": "Sharing your game\n\nYour game should now be public at yourdomain.digital.brynmawr.edu/game/filename.html\nIf you changed the filename to index, your url will be yourdomain.digital.brynmawr.edu/game\nCongratulations, you are a published author of interactive fiction!"
+  },
+  {
+    "objectID": "slides.html#resources",
+    "href": "slides.html#resources",
+    "title": "Creative Coding with Twine",
+    "section": "Resources",
+    "text": "Resources\n\nTwine Cookbook\nHarlowe documentation: https://twine2.neocities.org/ - this is the standard story template\nTwine and Interactive Fiction Handbook (slides)\nProgramming Historian: Interactive Text Games Using Twine"
+  },
+  {
+    "objectID": "slides.html#log-in-to-domain-of-ones-own",
+    "href": "slides.html#log-in-to-domain-of-ones-own",
+    "title": "Creative Coding with Twine",
+    "section": "Log in to Domain of One’s Own",
+    "text": "Log in to Domain of One’s Own\n\nNavigate to digital.brynmawr.edu and click on “Get Started” to log in\nIf you haven’t already, choose a domain name that is relatively short and unique"
+  },
+  {
+    "objectID": "slides.html#upload-your-game",
+    "href": "slides.html#upload-your-game",
+    "title": "Creative Coding with Twine",
+    "section": "Upload your game",
+    "text": "Upload your game\n\nFrom your DoOO Dashboard, locate the “File Manager”\nNavigate to the folder called “public_html”\nCreate a new sub-folder called “game”\nUpload your game to the “game” folder"
+  },
+  {
+    "objectID": "slides.html#your-turn-1",
+    "href": "slides.html#your-turn-1",
+    "title": "Creative Coding with Twine",
+    "section": "Your turn!",
+    "text": "Your turn!\nGive your game a makeover with some styling and customization.\nNeed inspiration? Check out the Digital Scholarship Adventure Game or Critters"
+  },
+  {
+    "objectID": "slides.html#advanced-html",
+    "href": "slides.html#advanced-html",
+    "title": "Creative Coding with Twine",
+    "section": "Advanced: HTML",
+    "text": "Advanced: HTML\n\nTwine is designed to be text-based, however, you can add images using html if they are hosted somewhere else:\n\n&lt;img src=\"exampleurl.com/cat.jpg\" alt=\"a cat in a box\"&gt;\n\nOther HTML syntax may work (but will sometimes break)"
+  },
+  {
+    "objectID": "slides.html#need-help",
+    "href": "slides.html#need-help",
+    "title": "Creative Coding with Twine",
+    "section": "Need help?",
+    "text": "Need help?\n\nCome to Digital Scholarship Office Hours, 1-3 PM in the Carpenter DMCL!\nEmail digitalscholarship@brynmawr.edu or help@brynmawr.edu"
+  },
+  {
+    "objectID": "slides.html#get-help",
+    "href": "slides.html#get-help",
+    "title": "Creative Coding with Twine",
+    "section": "Get help!",
+    "text": "Get help!\n\nCome to Digital Scholarship Office Hours, 1-3 PM in the Carpenter DMCL!\nEmail digitalscholarship@brynmawr.edu or help@brynmawr.edu"
+  }
+]
