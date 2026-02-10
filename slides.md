@@ -1,8 +1,8 @@
 ---
 title: Creative Coding with Twine
 date: February 11, 2026
-author: Alice McGrath
-subtitle: Experimental Literature Course
+author: Alice McGrath & Cameron Boucher
+subtitle: RUSS B233 - Experimental Literature
 format: 
     revealjs:
         theme: moon
@@ -15,38 +15,46 @@ editor:
 
 # Outline
 
-- Introduction
+- Introduction to Twine and Hypertext
 - Twine editing interface
 - Customization basics
 - Publishing guide
 
+# Introduction
+
+Twine and Hypertext
+
 ## Hypertext!
 
-- In the early days of the internet, the idea of 'hypertext' revolutionized book forms
-- Rather than a linear narrative (a scroll) or a sequential but segmented narrative (a book), hypertext enabled new forms of interactivity, multilinearity, and a network-based arrangement
-- Internal references (i.e. footnotes and other paratext, Choose-your-own-adventure, etc.) have already done this, but suddenly it was possible at a new scale
+- HTML = Hypertext Markup Language
+- Hypertext - interactive, multilinear, network-based
+- New experimental forms of fiction emerged in the early-mid 1990s, originally distributed via CD-Rom
+- Internal references in print book forms (i.e. footnotes and other paratext, Choose-your-own-adventure, etc.) had already done this, but suddenly it was possible at a new scale
+
+::: {.notes}
+- While other book forms had been linear (scroll) or sequential but segmented (a book), hypertext was inherently multilinear, network-based, interactive
 - Fun fact: Vladimir Nabokov's *Pale Fire* (1962) was almost used to demonstrate an early hypertext system in an IBM presentation in 1969
+:::
 
 ## Hypertext Literature
 
-An experimental form of fiction that digs into this multilinearity, mostly early-mid 1990s, distributed via CD-Rom
+*Patchwork Girl: A Modern Monster* by Shelley Jackson (1995, Eastgate Systems)
 
-- *Patchwork Girl: A Modern Monster* by Shelley Jackson
+> "In hypertext, everything is there at once and equally weighted. It is a body whose brain is dispersed throughout the cells, fraught with potential, fragile with indecision, or rather strong in foregoing decisions, the way a vine will bend but a tree can fall down."
 
-> "In hypertext, everything is there at once and equally weighted. It is a body whose brain is dispersed throughout the cells, fraught with potential, fragile with indecision, or rather strong in foregoing decisions, the way a vine will bend but a tree can fall down.[[7]](https://en.wikipedia.org/wiki/Patchwork_Girl_\(hypertext\)#cite_note-7)"
-	- Jackson, "Stitch Bitch: the patchwork girl", 1997
+- Jackson, "[Stitch Bitch: the patchwork girl](https://web.mit.edu/m-i-t/articles/jackson.html)", 1997 (qtd. in [Wikipedia](https://en.wikipedia.org/wiki/Patchwork_Girl_\(hypertext\)#cite_note-7))
 
 ## So what?
 - All of the internet is hypertext: context is created by hyperlinks that can be followed backwards and forwards and read in any order
-- [Twine](https://twinery.org/) is designed to make it easy to build interactive fiction without knowing how to code
-- It's used to create interactive fiction and text-based games that evoke this early hypertext era
+- [Twine](https://twinery.org/) is used to create interactive fiction and text-based games that evoke this early hypertext era
+- Rather than typical web navigation (e.g. menus, search bars), each bit of context in Twine is built intentionally
 
 
-## Twine
+## [Twine](https://twinery.org/)
 - Open-source tool for creating interactive fiction, games, and hypertext narratives
 - Output is simple HTML (Hyper Text Markup Language) that can be deployed on any web server
 - No-code editor that uses simple markup
-- 4 "story formats" that change the functionality and style: we are focusing on Harlowe
+- Editor interface shows connections between passages
 
 # Twine Editor Interface
 
