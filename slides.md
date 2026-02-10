@@ -49,27 +49,26 @@ Twine and Hypertext
 - [Twine](https://twinery.org/) is used to create interactive fiction and text-based games that evoke this early hypertext era
 - Rather than typical web navigation (e.g. menus, search bars), each bit of context in Twine is built intentionally
 
-
 ## [Twine](https://twinery.org/)
 - Open-source tool for creating interactive fiction, games, and hypertext narratives
 - Output is simple HTML (Hyper Text Markup Language) that can be deployed on any web server
 - No-code editor that uses simple markup
 - Editor interface shows connections between passages
+- Designed to emphasize interactivity (user-input, randomness, variables)
 
 # Twine Editor Interface
 
 ## Before we begin
-- Story format options
-	- **Harlowe** - default format. This is what we are using for this workshop.
-	- Chapbook - also beginner-friendly
-	- SugarCube & Snowman - designed for advanced users and more customization
+- Story format options change syntax and functionality
+	- **Harlowe** - default format (this what we are using for this workshop).
+	- Other options: Chapbook (beginner-friendly), SugarCube, Snowman (advanced)
 - You can download the application or use it in browser (if you use it in browser, backup and save often)
-- You can also use a text editor and a markup language called "Twee"
+- Twine games are stored in a markup language called [Twee](https://twinery.org/cookbook/terms/terms_twee.html) and can be edited in a text editor
 
 ## Getting started
 1. Navigate to [https://twinery.org/](https://twinery.org/)
 2. Click 'Use in your browser'
-3. In the top-left corner, click `+ New` and give your story a name
+3. In the top-left corner, click `+ New` to create a new story. Give yours a name
 4. The editor has an overall map with a single passage -- double click to edit
 5. Enter some text and rename your passage
 6. Click `Test From Here` to preview your game in a new tab
@@ -80,37 +79,31 @@ Twine and Hypertext
 - Use `**` for `**bold**` and `*` for `*italic*`
 - Use the WYSIWYG editor for other types of customizations
 
-## Vocab
+## Vocabulary
 
-- Markup - How data is structured, displayed, organized
-- Story - Twine project, website, or game
-- Passage - A contained section of a Twine story that can be linked to
-- Macro - A 'function' or bit of code used to enhance text functionality, indicated with parentheses
-- Hook - the passage of text that a macro acts on, indicated with square brackets
+- **Markup** - How data is structured, displayed, and organized (general term)
+- **Story** - A Twine project (i.e. a website, game, or book)
+- **Passage** - A contained section of a Twine story that can be linked to
+- **Macro** - A bit of code used to change functionality or style of text, indicated with parentheses
+- **Hook** - The passage of text that a macro acts on, indicated with square brackets
 `(font: "Arial")[This text will be in Arial.]`
-- Variable - A container for values and words that can change within the game
+- **Variable** - A container for values and words that can change within the game
 `(set: $myName to "Alice") Hello, $myName!`  
-- Function - "if this then this" - takes input and produces output
 
 ## Tips
 
 - Preview your work often to make sure the functionality is what you want
-- Export your work often to save it somewhere safe
+- If you are working in browser: export your game every time you are finished
 - Create an outline or storyboard before you try to build complex functionality
 - To check your story format: from the story editor, select 'Details' and select 'Harlowe 3.3.9'
 
 ## Your turn!
 
-Create a few passages and practice linking between them. Explore the editor interface options to try out more complex stuf.
+Create a few passages and practice linking between them. Explore the editor interface options to try out more complex stuff.
 
 # Customization
-Make your twine pretty and interactive
+Make your Twine story pretty and interactive
 
-## Things to try
-- Style customizations
-- Hide and show page content with links
-- Variety and randomness
-- Variables and conditionals
 
 ## Macros
 You can create macros using buttons in the main editor or by using text markup
@@ -125,10 +118,16 @@ Go to the [how-to](/#how-to) section of the home page for more
 
 ```md
 (link: "Click here please")[Thank you for clicking!]
-(display: "Cellar") <!-- Display a passage -->
+(display: "Cellar") <!-- Displays the passage "Cellar" in another passage -->
 (set: $points to it + 1)
 The weather was (either: "snowy", "rainy", "sunny")
 ```
+
+## Things to try
+- Style customizations
+- Hide and show page content with links
+- Variety and randomness using `(either:)` and `(random:)`
+- Variables and conditionals
 
 ## Your turn!
 
