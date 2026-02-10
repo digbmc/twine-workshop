@@ -18,7 +18,7 @@ editor:
 - Introduction
 - Twine editing interface
 - Customization basics
-- Deployment
+- Publishing guide
 
 ## Hypertext!
 
