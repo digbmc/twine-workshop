@@ -165,6 +165,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
   <li><a href="#other-tools-for-creative-coding" id="toc-other-tools-for-creative-coding" class="nav-link" data-scroll-target="#other-tools-for-creative-coding">Other tools for Creative Coding</a></li>
   </ul></li>
+  <li><a href="#publishing-guide" id="toc-publishing-guide" class="nav-link" data-scroll-target="#publishing-guide">Publishing guide</a>
+  <ul class="collapse">
+  <li><a href="#export-your-game-from-twine" id="toc-export-your-game-from-twine" class="nav-link" data-scroll-target="#export-your-game-from-twine">Export your game from Twine</a></li>
+  <li><a href="#deployment-using-dooo-or-haverford-sites" id="toc-deployment-using-dooo-or-haverford-sites" class="nav-link" data-scroll-target="#deployment-using-dooo-or-haverford-sites">Deployment using DoOO or Haverford Sites</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -190,7 +195,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>View slideshow: <a href="./slides.html">Twine slides</a></p>
+<p>Workshop for RUSS233 Experimental Literature</p>
+<p>2026.02.11</p>
+<p>Alice McGrath &amp; Cameron Boucher</p>
+<p><a href="./slides.html">View slideshow</a></p>
 <section id="how-to" class="level2">
 <h2 class="anchored" data-anchor-id="how-to">How To</h2>
 <p>Use this guide to make a few basic customizations. There are many more you can find in the <a href="https://twine2.neocities.org/">Harlowe Documentation</a> and the <a href="https://twinery.org/cookbook/">Twine Cookbook</a>.</p>
@@ -253,6 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>To set a variable: <code>(set: $name to "Alice")</code></p></li>
 <li><p>To display a variable: <code>Hello, $name</code></p></li>
 <li><p>You can also get user input and store it in a variable: <code>What's your name? (input:2bind $name,"X","")</code></p></li>
+<li><p>To use the variable on the same passage, use a prompt for this: <code>(set: $name to (prompt: [What's your name?], "Name"))</code></p></li>
 <li><p>Variables can also hold numbers: <code>(set: $score to 1)</code></p></li>
 <li><p>And you can do math on them: <code>(set: $score to it + 1)</code></p></li>
 </ul>
@@ -313,6 +322,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Texture</li>
 <li>Hosted Games</li>
 <li>Other options here: <a href="https://docs.google.com/document/d/1vIRlYDjwK7E8XufV5Cr0gYtmAvd0gWRORHF23JX28Ek/edit?tab=t.0">Tools and Resources for Making Games</a></li>
+</ul>
+</section>
+</section>
+<section id="publishing-guide" class="level2">
+<h2 class="anchored" data-anchor-id="publishing-guide">Publishing guide</h2>
+<p>A twine game can be deployed to a web server so that others can play the game. There are many options for webhosting services – here are a few that are free to you:</p>
+<ul>
+<li>Bryn Mawr: <strong>Domain of One’s Own</strong> - <a href="https://digital.brynmawr.edu/">digital.brynmawr.edu</a></li>
+<li>Haverford: <strong>Haverford Sites</strong> - <a href="https://sites.haverford.edu/">sites.haverford.edu</a></li>
+<li>GitHub Pages - <a href="https://github.com/">github.com</a> - see <a href="https://docs.github.com/en/pages">GitHub Pages documentation</a> (free with GitHub account)</li>
+</ul>
+<section id="export-your-game-from-twine" class="level3">
+<h3 class="anchored" data-anchor-id="export-your-game-from-twine">Export your game from Twine</h3>
+<ul>
+<li>From the Twine top menu, go to <strong>Build</strong> -&gt; <strong>Publish to File</strong> to export your game as html</li>
+<li>Open it in a browser app to play it locally</li>
+<li>Note on Filenames:
+<ul>
+<li>By default, the filename of your game will include the title</li>
+<li>Edit the filename so it has no spaces in it - this will be part of your URL</li>
+<li><em>Pro tip</em>: change the filename to <code>index.html</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="deployment-using-dooo-or-haverford-sites" class="level3">
+<h3 class="anchored" data-anchor-id="deployment-using-dooo-or-haverford-sites">Deployment using DoOO or Haverford Sites</h3>
+<ul>
+<li>Navigate to <a href="https://digital.brynmawr.edu/">digital.brynmawr.edu</a> or <a href="https://sites.haverford.edu/">sites.haverford.edu</a> and click on “Get Started” to log in
+<ul>
+<li>If you haven’t already, choose a domain name that is relatively short and unique to you</li>
+</ul></li>
+<li>Upload your game:
+<ul>
+<li>From your Dashboard, locate the “File Manager”</li>
+<li>Navigate to the folder called “public_html”</li>
+<li>Create a new sub-folder called “game”</li>
+<li>Upload your game to the “game” folder</li>
+</ul></li>
+<li>Navigate to your game’s URL
+<ul>
+<li>Your game should now be public at <strong>yourdomain.digital.brynmawr.edu/game/filename.html</strong></li>
+<li>If you changed the filename to index, your url will be <strong>yourdomain.digital.brynmawr.edu/game</strong></li>
+</ul></li>
 </ul>
 
 

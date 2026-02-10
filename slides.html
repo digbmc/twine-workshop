@@ -9,7 +9,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.27">
 
-  <meta name="author" content="Alice McGrath">
+  <meta name="author" content="Alice McGrath &amp; Cameron Boucher">
   <meta name="dcterms.date" content="2026-02-11">
   <title>Creative coding with Twine – Creative Coding with Twine</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -196,62 +196,83 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Creative Coding with Twine</h1>
-  <p class="subtitle">Experimental Literature Course</p>
+  <p class="subtitle">RUSS B233 - Experimental Literature</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Alice McGrath 
+Alice McGrath &amp; Cameron Boucher 
 </div>
 </div>
 </div>
 
   <p class="date">2026-02-11</p>
 </section>
-<section>
 <section id="outline" class="title-slide slide level1 center">
 <h1>Outline</h1>
 <ul>
-<li>Introduction</li>
+<li>Introduction to Twine and Hypertext</li>
 <li>Twine editing interface</li>
 <li>Customization basics</li>
 <li>Publishing guide</li>
 </ul>
 </section>
+
+<section>
+<section id="introduction" class="title-slide slide level1 center">
+<h1>Introduction</h1>
+<p>Twine and Hypertext</p>
+</section>
 <section id="hypertext" class="slide level2">
 <h2>Hypertext!</h2>
 <ul>
-<li>In the early days of the internet, the idea of ‘hypertext’ revolutionized book forms</li>
-<li>Rather than a linear narrative (a scroll) or a sequential but segmented narrative (a book), hypertext enabled new forms of interactivity, multilinearity, and a network-based arrangement</li>
-<li>Internal references (i.e.&nbsp;footnotes and other paratext, Choose-your-own-adventure, etc.) have already done this, but suddenly it was possible at a new scale</li>
+<li>HTML = Hypertext Markup Language</li>
+<li>Hypertext - interactive, multilinear, network-based</li>
+<li>New experimental forms of fiction emerged in the early-mid 1990s, originally distributed via CD-Rom</li>
+<li>Internal references in print book forms (i.e.&nbsp;footnotes and other paratext, Choose-your-own-adventure, etc.) had already done this, but suddenly it was possible at a new scale</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>While other book forms had been linear (scroll) or sequential but segmented (a book), hypertext was inherently multilinear, network-based, interactive</li>
 <li>Fun fact: Vladimir Nabokov’s <em>Pale Fire</em> (1962) was almost used to demonstrate an early hypertext system in an IBM presentation in 1969</li>
 </ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="hypertext-literature" class="slide level2">
 <h2>Hypertext Literature</h2>
-<p>An experimental form of fiction that digs into this multilinearity, mostly early-mid 1990s, distributed via CD-Rom</p>
-<ul>
-<li><em>Patchwork Girl: A Modern Monster</em> by Shelley Jackson</li>
-</ul>
+<p><em>Patchwork Girl: A Modern Monster</em> by Shelley Jackson (1995, Eastgate Systems)</p>
 <blockquote>
-<p>“In hypertext, everything is there at once and equally weighted. It is a body whose brain is dispersed throughout the cells, fraught with potential, fragile with indecision, or rather strong in foregoing decisions, the way a vine will bend but a tree can fall down.<a href="https://en.wikipedia.org/wiki/Patchwork_Girl_(hypertext)#cite_note-7">[7]</a>” - Jackson, “Stitch Bitch: the patchwork girl”, 1997</p>
+<p>“In hypertext, everything is there at once and equally weighted. It is a body whose brain is dispersed throughout the cells, fraught with potential, fragile with indecision, or rather strong in foregoing decisions, the way a vine will bend but a tree can fall down.”</p>
 </blockquote>
+<ul>
+<li>Jackson, “<a href="https://web.mit.edu/m-i-t/articles/jackson.html">Stitch Bitch: the patchwork girl</a>”, 1997 (qtd. in <a href="https://en.wikipedia.org/wiki/Patchwork_Girl_(hypertext)#cite_note-7">Wikipedia</a>)</li>
+</ul>
 </section>
 <section id="so-what" class="slide level2">
 <h2>So what?</h2>
 <ul>
 <li>All of the internet is hypertext: context is created by hyperlinks that can be followed backwards and forwards and read in any order</li>
-<li><a href="https://twinery.org/">Twine</a> is designed to make it easy to build interactive fiction without knowing how to code</li>
-<li>It’s used to create interactive fiction and text-based games that evoke this early hypertext era</li>
+<li><a href="https://twinery.org/">Twine</a> is used to create interactive fiction and text-based games that evoke this early hypertext era</li>
+<li>Rather than typical web navigation (e.g.&nbsp;menus, search bars), each bit of context in Twine is built intentionally</li>
 </ul>
 </section>
 <section id="twine" class="slide level2">
-<h2>Twine</h2>
+<h2><a href="https://twinery.org/">Twine</a></h2>
 <ul>
 <li>Open-source tool for creating interactive fiction, games, and hypertext narratives</li>
 <li>Output is simple HTML (Hyper Text Markup Language) that can be deployed on any web server</li>
 <li>No-code editor that uses simple markup</li>
-<li>4 “story formats” that change the functionality and style: we are focusing on Harlowe</li>
+<li>Editor interface shows connections between passages</li>
 </ul>
 </section></section>
 <section>
