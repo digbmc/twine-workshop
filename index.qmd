@@ -124,7 +124,8 @@ Because Twine is designed for games, there isn't much built-in navigation. It ca
 
 - [Open Sorcery](https://abigailcorfman.com/Home/OpenSorcery) and its sequel [Open Sorcery Sea++](https://opensorcerygames.itch.io/open-sorcery-sea)
 - [16 Ways to Kill a Vampire at McDonalds](https://abigailcorfman.com/Home/Vampire)
-- [Digital Scholarship Adventure Game](https://digitalscholarship.brynmawr.edu/game/)
+- Digital Scholarship Adventure Game: [Live DS Game site](https://digitalscholarship.brynmawr.edu/game/)
+  - Download [Twee for DS Game](https://raw.githubusercontent.com/digbmc/twine-workshop/refs/heads/main/examples/DigitalScholarship.twee)
 - [Critters](https://alicetmcgrath.com/fun/) (a short and goofy game for this workshop)
 
 ### Other tools for Creative Coding
