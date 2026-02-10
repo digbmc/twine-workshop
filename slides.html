@@ -273,6 +273,7 @@ Alice McGrath &amp; Cameron Boucher
 <li>Output is simple HTML (Hyper Text Markup Language) that can be deployed on any web server</li>
 <li>No-code editor that uses simple markup</li>
 <li>Editor interface shows connections between passages</li>
+<li>Designed to emphasize interactivity (user-input, randomness, variables)</li>
 </ul>
 </section></section>
 <section>
@@ -283,14 +284,13 @@ Alice McGrath &amp; Cameron Boucher
 <section id="before-we-begin" class="slide level2">
 <h2>Before we begin</h2>
 <ul>
-<li>Story format options
+<li>Story format options change syntax and functionality
 <ul>
-<li><strong>Harlowe</strong> - default format. This is what we are using for this workshop.</li>
-<li>Chapbook - also beginner-friendly</li>
-<li>SugarCube &amp; Snowman - designed for advanced users and more customization</li>
+<li><strong>Harlowe</strong> - default format (this what we are using for this workshop).</li>
+<li>Other options: Chapbook (beginner-friendly), SugarCube, Snowman (advanced)</li>
 </ul></li>
 <li>You can download the application or use it in browser (if you use it in browser, backup and save often)</li>
-<li>You can also use a text editor and a markup language called “Twee”</li>
+<li>Twine games are stored in a markup language called <a href="https://twinery.org/cookbook/terms/terms_twee.html">Twee</a> and can be edited in a text editor</li>
 </ul>
 </section>
 <section id="getting-started" class="slide level2">
@@ -298,7 +298,7 @@ Alice McGrath &amp; Cameron Boucher
 <ol type="1">
 <li>Navigate to <a href="https://twinery.org/">https://twinery.org/</a></li>
 <li>Click ‘Use in your browser’</li>
-<li>In the top-left corner, click <code>+ New</code> and give your story a name</li>
+<li>In the top-left corner, click <code>+ New</code> to create a new story. Give yours a name</li>
 <li>The editor has an overall map with a single passage – double click to edit</li>
 <li>Enter some text and rename your passage</li>
 <li>Click <code>Test From Here</code> to preview your game in a new tab</li>
@@ -313,45 +313,34 @@ Alice McGrath &amp; Cameron Boucher
 <li>Use the WYSIWYG editor for other types of customizations</li>
 </ul>
 </section>
-<section id="vocab" class="slide level2">
-<h2>Vocab</h2>
+<section id="vocabulary" class="slide level2">
+<h2>Vocabulary</h2>
 <ul>
-<li>Markup - How data is structured, displayed, organized</li>
-<li>Story - Twine project, website, or game</li>
-<li>Passage - A contained section of a Twine story that can be linked to</li>
-<li>Macro - A ‘function’ or bit of code used to enhance text functionality, indicated with parentheses</li>
-<li>Hook - the passage of text that a macro acts on, indicated with square brackets <code>(font: "Arial")[This text will be in Arial.]</code></li>
-<li>Variable - A container for values and words that can change within the game <code>(set: $myName to "Alice") Hello, $myName!</code><br>
-</li>
-<li>Function - “if this then this” - takes input and produces output</li>
+<li><strong>Markup</strong> - How data is structured, displayed, and organized (general term)</li>
+<li><strong>Story</strong> - A Twine project (i.e.&nbsp;a website, game, or book)</li>
+<li><strong>Passage</strong> - A contained section of a Twine story that can be linked to</li>
+<li><strong>Macro</strong> - A bit of code used to change functionality or style of text, indicated with parentheses</li>
+<li><strong>Hook</strong> - The passage of text that a macro acts on, indicated with square brackets <code>(font: "Arial")[This text will be in Arial.]</code></li>
+<li><strong>Variable</strong> - A container for values and words that can change within the game <code>(set: $myName to "Alice") Hello, $myName!</code></li>
 </ul>
 </section>
 <section id="tips" class="slide level2">
 <h2>Tips</h2>
 <ul>
 <li>Preview your work often to make sure the functionality is what you want</li>
-<li>Export your work often to save it somewhere safe</li>
+<li>If you are working in browser: export your game every time you are finished</li>
 <li>Create an outline or storyboard before you try to build complex functionality</li>
 <li>To check your story format: from the story editor, select ‘Details’ and select ‘Harlowe 3.3.9’</li>
 </ul>
 </section>
 <section id="your-turn" class="slide level2">
 <h2>Your turn!</h2>
-<p>Create a few passages and practice linking between them. Explore the editor interface options to try out more complex stuf.</p>
+<p>Create a few passages and practice linking between them. Explore the editor interface options to try out more complex stuff.</p>
 </section></section>
 <section>
 <section id="customization" class="title-slide slide level1 center">
 <h1>Customization</h1>
-<p>Make your twine pretty and interactive</p>
-</section>
-<section id="things-to-try" class="slide level2">
-<h2>Things to try</h2>
-<ul>
-<li>Style customizations</li>
-<li>Hide and show page content with links</li>
-<li>Variety and randomness</li>
-<li>Variables and conditionals</li>
-</ul>
+<p>Make your Twine story pretty and interactive</p>
 </section>
 <section id="macros" class="slide level2">
 <h2>Macros</h2>
@@ -366,9 +355,18 @@ Alice McGrath &amp; Cameron Boucher
 <h2>Usage examples</h2>
 <p>Go to the <a href="./#how-to">how-to</a> section of the home page for more</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a>(link: "Click here please")<span class="co">[</span><span class="ot">Thank you for clicking!</span><span class="co">]</span></span>
-<span id="cb1-2"><a></a>(display: "Cellar") <span class="co">&lt;!-- Display a passage --&gt;</span></span>
+<span id="cb1-2"><a></a>(display: "Cellar") <span class="co">&lt;!-- Displays the passage "Cellar" in another passage --&gt;</span></span>
 <span id="cb1-3"><a></a>(set: $points to it + 1)</span>
 <span id="cb1-4"><a></a>The weather was (either: "snowy", "rainy", "sunny")</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="things-to-try" class="slide level2">
+<h2>Things to try</h2>
+<ul>
+<li>Style customizations</li>
+<li>Hide and show page content with links</li>
+<li>Variety and randomness using <code>(either:)</code> and <code>(random:)</code></li>
+<li>Variables and conditionals</li>
+</ul>
 </section>
 <section id="your-turn-1" class="slide level2">
 <h2>Your turn!</h2>

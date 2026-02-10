@@ -25,21 +25,21 @@
     "href": "slides.html#twine",
     "title": "Creative Coding with Twine",
     "section": "Twine",
-    "text": "Twine\n\nOpen-source tool for creating interactive fiction, games, and hypertext narratives\nOutput is simple HTML (Hyper Text Markup Language) that can be deployed on any web server\nNo-code editor that uses simple markup\nEditor interface shows connections between passages"
+    "text": "Twine\n\nOpen-source tool for creating interactive fiction, games, and hypertext narratives\nOutput is simple HTML (Hyper Text Markup Language) that can be deployed on any web server\nNo-code editor that uses simple markup\nEditor interface shows connections between passages\nDesigned to emphasize interactivity (user-input, randomness, variables)"
   },
   {
     "objectID": "slides.html#before-we-begin",
     "href": "slides.html#before-we-begin",
     "title": "Creative Coding with Twine",
     "section": "Before we begin",
-    "text": "Before we begin\n\nStory format options\n\nHarlowe - default format. This is what we are using for this workshop.\nChapbook - also beginner-friendly\nSugarCube & Snowman - designed for advanced users and more customization\n\nYou can download the application or use it in browser (if you use it in browser, backup and save often)\nYou can also use a text editor and a markup language called “Twee”"
+    "text": "Before we begin\n\nStory format options change syntax and functionality\n\nHarlowe - default format (this what we are using for this workshop).\nOther options: Chapbook (beginner-friendly), SugarCube, Snowman (advanced)\n\nYou can download the application or use it in browser (if you use it in browser, backup and save often)\nTwine games are stored in a markup language called Twee and can be edited in a text editor"
   },
   {
     "objectID": "slides.html#getting-started",
     "href": "slides.html#getting-started",
     "title": "Creative Coding with Twine",
     "section": "Getting started",
-    "text": "Getting started\n\nNavigate to https://twinery.org/\nClick ‘Use in your browser’\nIn the top-left corner, click + New and give your story a name\nThe editor has an overall map with a single passage – double click to edit\nEnter some text and rename your passage\nClick Test From Here to preview your game in a new tab"
+    "text": "Getting started\n\nNavigate to https://twinery.org/\nClick ‘Use in your browser’\nIn the top-left corner, click + New to create a new story. Give yours a name\nThe editor has an overall map with a single passage – double click to edit\nEnter some text and rename your passage\nClick Test From Here to preview your game in a new tab"
   },
   {
     "objectID": "slides.html#basics",
@@ -49,32 +49,25 @@
     "text": "Basics\n\nLink to a new passage using double square brackets [[pasage name]]\nUse hash marks to create headers: # Header 1 and ## Header 2\nUse ** for **bold** and * for *italic*\nUse the WYSIWYG editor for other types of customizations"
   },
   {
-    "objectID": "slides.html#vocab",
-    "href": "slides.html#vocab",
+    "objectID": "slides.html#vocabulary",
+    "href": "slides.html#vocabulary",
     "title": "Creative Coding with Twine",
-    "section": "Vocab",
-    "text": "Vocab\n\nMarkup - How data is structured, displayed, organized\nStory - Twine project, website, or game\nPassage - A contained section of a Twine story that can be linked to\nMacro - A ‘function’ or bit of code used to enhance text functionality, indicated with parentheses\nHook - the passage of text that a macro acts on, indicated with square brackets (font: \"Arial\")[This text will be in Arial.]\nVariable - A container for values and words that can change within the game (set: $myName to \"Alice\") Hello, $myName!\n\nFunction - “if this then this” - takes input and produces output"
+    "section": "Vocabulary",
+    "text": "Vocabulary\n\nMarkup - How data is structured, displayed, and organized (general term)\nStory - A Twine project (i.e. a website, game, or book)\nPassage - A contained section of a Twine story that can be linked to\nMacro - A bit of code used to change functionality or style of text, indicated with parentheses\nHook - The passage of text that a macro acts on, indicated with square brackets (font: \"Arial\")[This text will be in Arial.]\nVariable - A container for values and words that can change within the game (set: $myName to \"Alice\") Hello, $myName!"
   },
   {
     "objectID": "slides.html#tips",
     "href": "slides.html#tips",
     "title": "Creative Coding with Twine",
     "section": "Tips",
-    "text": "Tips\n\nPreview your work often to make sure the functionality is what you want\nExport your work often to save it somewhere safe\nCreate an outline or storyboard before you try to build complex functionality\nTo check your story format: from the story editor, select ‘Details’ and select ‘Harlowe 3.3.9’"
+    "text": "Tips\n\nPreview your work often to make sure the functionality is what you want\nIf you are working in browser: export your game every time you are finished\nCreate an outline or storyboard before you try to build complex functionality\nTo check your story format: from the story editor, select ‘Details’ and select ‘Harlowe 3.3.9’"
   },
   {
     "objectID": "slides.html#your-turn",
     "href": "slides.html#your-turn",
     "title": "Creative Coding with Twine",
     "section": "Your turn!",
-    "text": "Your turn!\nCreate a few passages and practice linking between them. Explore the editor interface options to try out more complex stuf."
-  },
-  {
-    "objectID": "slides.html#things-to-try",
-    "href": "slides.html#things-to-try",
-    "title": "Creative Coding with Twine",
-    "section": "Things to try",
-    "text": "Things to try\n\nStyle customizations\nHide and show page content with links\nVariety and randomness\nVariables and conditionals"
+    "text": "Your turn!\nCreate a few passages and practice linking between them. Explore the editor interface options to try out more complex stuff."
   },
   {
     "objectID": "slides.html#macros",
@@ -88,7 +81,14 @@
     "href": "slides.html#usage-examples",
     "title": "Creative Coding with Twine",
     "section": "Usage examples",
-    "text": "Usage examples\nGo to the how-to section of the home page for more\n(link: \"Click here please\")[Thank you for clicking!]\n(display: \"Cellar\") &lt;!-- Display a passage --&gt;\n(set: $points to it + 1)\nThe weather was (either: \"snowy\", \"rainy\", \"sunny\")"
+    "text": "Usage examples\nGo to the how-to section of the home page for more\n(link: \"Click here please\")[Thank you for clicking!]\n(display: \"Cellar\") &lt;!-- Displays the passage \"Cellar\" in another passage --&gt;\n(set: $points to it + 1)\nThe weather was (either: \"snowy\", \"rainy\", \"sunny\")"
+  },
+  {
+    "objectID": "slides.html#things-to-try",
+    "href": "slides.html#things-to-try",
+    "title": "Creative Coding with Twine",
+    "section": "Things to try",
+    "text": "Things to try\n\nStyle customizations\nHide and show page content with links\nVariety and randomness using (either:) and (random:)\nVariables and conditionals"
   },
   {
     "objectID": "slides.html#your-turn-1",
@@ -186,7 +186,7 @@
     "href": "index.html#resources",
     "title": "Creative Coding with Twine",
     "section": "Resources",
-    "text": "Resources\n\nTwine tutorials\n\nTwine Cookbook\nHarlowe documentation - this is the standard story template\nTwine and Interactive Fiction Handbook (slides)\nProgramming Historian: Interactive Text Games Using Twine\n\n\n\nExamples\n\nWorkshop examples\n\nDigital Scholarship Adventure Game (live) - an educational game to learn about digital scholarship services at Bryn Mawr\nCritters (live) - a short and goofy game for this workshop\nTwee code for both games is available on the GitHub for this workshop\n\nTo view the code, click on either file (e.g. “Critters.twee”)\nTo download, use the download icon\nYou can import the Twee code into Twine to see what it looks like in the editor\n\n\n\n\nExamples in the wild\n\nOpen Sorcery and its sequel Open Sorcery Sea++\n16 Ways to Kill a Vampire at McDonalds\nExplore many more on itch.io: Twine games on itch.io\n\n\n\n\nOther tools for Creative Coding\n\nInform7\nTexture\nHosted Games\nOther options here: Tools and Resources for Making Games"
+    "text": "Resources\n\nTwine tutorials\nNB: If you are using a tutorial, make sure you know which story format it describes because syntax can be quite different\n\nTwine Cookbook\nHarlowe documentation - this is the standard story template\nTwine and Interactive Fiction Handbook (slides)\nProgramming Historian: Interactive Text Games Using Twine\nA Total Beginner’s Guide to Twine 2.1 (videos)\n\n\n\nTwine game examples\n\nWorkshop examples\n\nDigital Scholarship Adventure Game (live) - an educational game to learn about digital scholarship services at Bryn Mawr\nCritters (live) - a short and goofy game for this workshop\nTwee code for both games is available on the GitHub for this workshop\n\nTo view the code, click on either file (e.g. “Critters.twee”)\nTo download, use the download icon\nYou can import the Twee code into Twine to see what it looks like in the editor\n\n\n\n\nExamples in the wild\n\nSeptember 7th, 2020 by Cait S. Kirby\nDepression Quest by Zoe Quinn\nFirst Day in the Office by Gabi Kirilloff\nOpen Sorcery and its sequel Open Sorcery Sea++ by Abigail Corfman\n16 Ways to Kill a Vampire at McDonalds by Abigail Corfman\nQueers in Love at the End of the World by Anna Anthropy\nExplore many more on itch.io: Twine games on itch.io\n\n\n\n\nOther tools for Creative Coding\n\nInform7\nTexture\nHosted Games\nOther options here: Tools and Resources for Making Games"
   },
   {
     "objectID": "index.html#publishing-guide",
