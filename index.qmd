@@ -122,11 +122,20 @@ Because Twine is designed for games, there isn't much built-in navigation. It ca
 
 ### Examples
 
+#### Workshop examples
+
+- [Digital Scholarship Adventure Game (live)](https://digitalscholarship.brynmawr.edu/game/) - an educational game to learn about digital scholarship services at Bryn Mawr
+- [Critters (live)](https://alicetmcgrath.com/fun/) - a short and goofy game for this workshop
+- Twee code for both games is available [on the GitHub for this workshop](https://github.com/digbmc/twine-workshop/tree/main/examples)
+  - To view the code, click on either file (e.g. "Critters.twee")
+  - To download, use the download icon
+  - You can import the Twee code into Twine to see what it looks like in the editor
+
+#### Examples in the wild
+
 - [Open Sorcery](https://abigailcorfman.com/Home/OpenSorcery) and its sequel [Open Sorcery Sea++](https://opensorcerygames.itch.io/open-sorcery-sea)
 - [16 Ways to Kill a Vampire at McDonalds](https://abigailcorfman.com/Home/Vampire)
-- Digital Scholarship Adventure Game: [Live DS Game site](https://digitalscholarship.brynmawr.edu/game/)
-  - Download [Twee for DS Game](https://raw.githubusercontent.com/digbmc/twine-workshop/refs/heads/main/examples/DigitalScholarship.twee)
-- [Critters](https://alicetmcgrath.com/fun/) (a short and goofy game for this workshop)
+- Explore many more on itch.io: [Twine games on itch.io](https://itch.io/games/tag-twine) 
 
 ### Other tools for Creative Coding
 - Inform7

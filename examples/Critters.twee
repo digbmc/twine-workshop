@@ -1,0 +1,631 @@
+:: StoryTitle
+Critters
+
+
+:: StoryData
+{
+  "ifid": "C168C8E0-7745-4EE9-8831-0485D61DC9E8",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Home",
+  "tag-colors": {
+    "header": "blue",
+    "footer": "purple"
+  },
+  "zoom": 1
+}
+
+
+:: Axolotl {"position":"975,875","size":"100,100"}
+Axolotls are wonderful
+<img src="https://alicemcgrath.digital.brynmawr.edu/simple-site/images/janeway.jpg" width="300">
+Don't you agree? Let's read some poetry about Axolotls.
+
+(link:"The Axolotl")[(set: $animal to 'Axolotl')(display:"The Animal")]
+
+
+:: Cat {"position":"1275,900","size":"100,100"}
+Cats are wonderful
+
+<img src="https://alicetmcgrath.com/pets/spock.JPG" width="300">
+
+Don't you agree? Let's read some feline poetry.
+
+(link:"Jubilate Agno")[(display:'jubilate')]
+
+(link:"The Cat")[(set: $animal to 'Cat')(display:"The Animal")]
+
+(append: ?SideBar)+(text-rotate-z:90)[ Cats ]
+
+
+
+:: Choices {"position":"625,425","size":"100,100"}
+
+I'd like to get to know you a little better if we're going to be spending so much time together.
+
+What's your favorite type of critter? (input:2bind $species,"=XX=","animal")
+
+What's your favorite color? (input:2bind $color,"=XX=","blue")
+
+Let's do some magic!
+
+[[OK|magictrick]]
+
+
+
+
+:: Dog {"position":"1100,1050","size":"100,100"}
+Dogs are wonderful
+
+<img src="https://alicetmcgrath.com/pets/angel.jpg" width="300">
+
+Don't you agree? Let's read some canine poetry
+
+(link: "To Flush, My Dog")[(display: "Flush")]
+(link:"The Dog")[(set: $animal to 'Dog')(display:"The Animal")]
+
+(append: ?SideBar)+(text-rotate-z:90)[ Dogs ]
+
+
+
+:: Flush {"position":"1125,1175","size":"100,100"}
+
+(font:"Arial")[ 
+
+## To Flush, My Dog
+
+By Elizabeth Barrett Browning
+
+Loving friend, the gift of one,
+Who, her own true faith, hath run,
+Through thy lower nature;
+Be my benediction said
+With my hand upon thy head,
+Gentle fellow-creature!
+
+Like a lady’s ringlets brown,
+Flow thy silken ears adown
+Either side demurely,
+Of thy silver-suited breast
+Shining out from all the rest
+Of thy body purely.
+
+Darkly brown thy body is,
+Till the sunshine, striking this,
+Alchemize its dulness, —
+When the sleek curls manifold
+Flash all over into gold,
+With a burnished fulness.
+
+Underneath my stroking hand,
+Startled eyes of hazel bland
+Kindling, growing larger, —
+Up thou leapest with a spring,
+Full of prank and curvetting,
+Leaping like a charger.
+
+Leap! thy broad tail waves a light;
+Leap! thy slender feet are bright,
+Canopied in fringes.
+Leap — those tasselled ears of thine
+Flicker strangely, fair and fine,
+Down their golden inches
+
+Yet, my pretty sportive friend,
+Little is ’t to such an end
+That I praise thy rareness!
+Other dogs may be thy peers
+Haply in these drooping ears,
+And this glossy fairness.
+
+But of thee it shall be said,
+This dog watched beside a bed
+Day and night unweary, —
+Watched within a curtained room,
+Where no sunbeam brake the gloom
+Round the sick and dreary.
+
+Roses, gathered for a vase,
+In that chamber died apace,
+Beam and breeze resigning —
+This dog only, waited on,
+Knowing that when light is gone,
+Love remains for shining.
+
+Other dogs in thymy dew
+Tracked the hares and followed through
+Sunny moor or meadow —
+This dog only, crept and crept
+Next a languid cheek that slept,
+Sharing in the shadow.
+
+Other dogs of loyal cheer
+Bounded at the whistle clear,
+Up the woodside hieing —
+This dog only, watched in reach
+Of a faintly uttered speech,
+Or a louder sighing.
+
+And if one or two quick tears
+Dropped upon his glossy ears,
+Or a sigh came double, —
+Up he sprang in eager haste,
+Fawning, fondling, breathing fast,
+In a tender trouble.
+
+And this dog was satisfied,
+If a pale thin hand would glide,
+Down his dewlaps sloping, —
+Which he pushed his nose within,
+After, — platforming his chin
+On the palm left open.
+
+This dog, if a friendly voice
+Call him now to blyther choice
+Than such chamber-keeping,
+“Come out!” praying from the door, —
+Presseth backward as before,
+Up against me leaping.
+
+Therefore to this dog will I,
+Tenderly not scornfully,
+Render praise and favour!
+With my hand upon his head,
+Is my benediction said
+Therefore, and for ever.
+
+And because he loves me so,
+Better than his kind will do
+Often, man or woman,
+Give I back more love again
+Than dogs often take of men, —
+Leaning from my Human.
+
+Blessings on thee, dog of mine,
+Pretty collars make thee fine,
+Sugared milk make fat thee!
+Pleasures wag on in thy tail —
+Hands of gentle motion fail
+Nevermore, to pat thee!
+
+Downy pillow take thy head,
+Silken coverlid bestead,
+Sunshine help thy sleeping!
+No fly’s buzzing wake thee up —
+No man break thy purple cup,
+Set for drinking deep in.
+
+Whiskered cats arointed flee —
+Sturdy stoppers keep from thee
+Cologne distillations;
+Nuts lie in thy path for stones,
+And thy feast-day macaroons
+Turn to daily rations!
+
+Mock I thee, in wishing weal ? —
+Tears are in my eyes to feel
+Thou art made so straightly,
+Blessing needs must straighten too, —
+Little canst thou joy or do,
+Thou who lovest greatly.
+
+Yet be blessed to the height
+Of all good and all delight
+Pervious to thy nature, —
+Only loved beyond that line,
+With a love that answers thine,
+Loving fellow-creature!
+
+]
+
+
+:: Footer {"position":"1200,475","size":"100,100"}
+
+
+==>
+(font:'Helvetica')+(text-color:'cyan')[
+---
+Created by the McGrurry Menagerie]
+
+
+:: Header [header] {"position":"1125,300","size":"100,100"}
+==>
+(font:'Helvetica')[(text-colour:cyan)[ [[Critters|Home]]] [[Lost|lost]] ]
+
+
+:: Home {"position":"775,275","size":"100,100"}
+# Critters
+
+(text-style:"fade-in-out")[WELCOME]
+
+To begin with, we are here. I don't know what to do.
+
+(after:2s) [What do you want to do?
+
+(after: time+2s) [I guess it's my party, so I will come up with a slate of activities.
+
+(after: time + 2s) [ Ok. How about if I ask you a couple of questions? 
+
+Shall we [[proceed|Choices]]?
+]
+]
+]
+
+
+:: Human {"position":"600,625","size":"100,100"}
+(set: $species to 'HUMAN', $color to 'dishwater')
+
+Ok, fine, yeesh.
+
+(display: "abracadabra")
+
+(after:4s)[=
+My spell has transformed you into a $species with dull $color eyes.
+
+Humans are boring. Shall we continue on our [[journey]]?
+
+
+
+:: The Animal {"position":"725,1025","size":"100,100"}
+(display: "species")(if: $animal is 0)[(set: $animal to $species)]
+(enchant:?page,(bg:red))(font:"Arial")[
+
+# The $animal
+
+by Wiliam Blake
+
+$animal $animal, burning bright, 
+In the forests of the night; 
+What immortal hand or eye, 
+Could frame thy fearful symmetry?
+
+In what distant deeps or skies. 
+Burnt the fire of thine eyes?
+On what wings dare he aspire?
+What the hand, dare seize the fire?
+
+And what shoulder, & what art,
+Could twist the sinews of thy heart?
+And when thy heart began to beat.
+What dread hand? & what dread feet?
+
+What the hammer? what the chain,
+In what furnace was thy brain?
+What the anvil? what dread grasp.
+Dare its deadly terrors clasp?
+
+When the stars threw down their spears 
+And water'd heaven with their tears:
+Did he smile his work to see?
+Did he who made the (either: "Sloth", "Goldfish", "Slug", "Ocelot") make thee?
+
+$animal $animal burning bright,
+In the forests of the night:
+What immortal hand or eye,
+Dare frame thy fearful symmetry?]
+
+
+:: The Tyger {"position":"675,875","size":"100,100"}
+(enchant:?page,(bg:#6a07ab))
+(font:"Arial")[
+
+# The Tyger
+
+by Wiliam Blake
+
+Tyger Tyger, burning bright, 
+In the forests of the night; 
+What immortal hand or eye, 
+Could frame thy fearful symmetry?
+
+In what distant deeps or skies. 
+Burnt the fire of thine eyes?
+On what wings dare he aspire?
+What the hand, dare seize the fire?
+
+And what shoulder, & what art,
+Could twist the sinews of thy heart?
+And when thy heart began to beat.
+What dread hand? & what dread feet?
+
+What the hammer? what the chain,
+In what furnace was thy brain?
+What the anvil? what dread grasp.
+Dare its deadly terrors clasp?
+
+When the stars threw down their spears 
+And water'd heaven with their tears:
+Did he smile his work to see?
+Did he who made the Lamb make thee?
+
+Tyger Tyger burning bright,
+In the forests of the night:
+What immortal hand or eye,
+Dare frame thy fearful symmetry?]
+
+---
+
+Powerful stuff, huh? 
+Why don't you share your [[thoughts]]?
+First, let's make it more [[relatable|The Animal]]
+
+
+:: abracadabra {"position":"400,625","size":"100,100"}
+(after:1s)+ (text-rotate-x:37)+(text-rotate-z:328)[Abracadabra]
+
+(after:2s)+(text-rotate-x:37)+(text-rotate-z:296)[ABRACADABRA]
+
+(after:3s)+(text-rotate-z:29)[Abracadabra]
+
+
+:: agree {"position":"475,875","size":"100,100"}
+(if: $thoughts is "")[Let's try again to have some thoughts. [[interpretation]]](else:)[I agree that $thoughts!]
+
+
+:: interpretation {"position":"300,850","size":"100,100"}
+Your thoughts? (input-box:2bind $thoughts,"X")
+
+[[ok|agree]]
+
+
+
+:: journey {"position":"800,625","size":"100,100"}
+(display:'species')
+
+You make such an excellent $species
+
+(after: 1s)+(text-rotate-x:37)+(text-rotate-z:328)[ $species]
+(after:2s)+(text-rotate-z:29)[$species]
+
+Wait a minute, my little $species, it looks like there's a message for us here:
+
+(link:"Read it")[=
+
+(box:"X", 2)[(b4r:"groove")+(b4r-colour:red,red,red,red)[FOLLOW THE PATH AND YOU WILL ENCOUNTER WONDERS UNTOLD.]]
+
+What do you think?  Shall we follow it?
+
+(link:"Follow")[=
+
+After following along for a spell, there's a fork. Which way should we go?
+
+Turn [[left]] or turn [[right]]
+
+
+
+
+(text-style:"subscript","buoy")[I'm [[lost]]]
+
+
+:: jubilate {"position":"1250,1050","size":"100,100"}
+
+(font:"Arial")[
+
+## from *Jubilate Agno*
+
+By Christopher Smart
+
+For I will consider my Cat Jeoffry.
+For he is the servant of the Living God duly and daily serving him.
+For at the first glance of the glory of God in the East he worships in his way.
+For this is done by wreathing his body seven times round with elegant quickness.
+For then he leaps up to catch the musk, which is the blessing of God upon his prayer.
+For he rolls upon prank to work it in.
+For having done duty and received blessing he begins to consider himself.
+For this he performs in ten degrees.
+For first he looks upon his forepaws to see if they are clean.
+For secondly he kicks up behind to clear away there.
+For thirdly he works it upon stretch with the forepaws extended.
+For fourthly he sharpens his paws by wood.
+For fifthly he washes himself.
+For sixthly he rolls upon wash.
+For seventhly he fleas himself, that he may not be interrupted upon the beat.
+For eighthly he rubs himself against a post.
+For ninthly he looks up for his instructions.
+For tenthly he goes in quest of food.
+For having consider'd God and himself he will consider his neighbour.
+For if he meets another cat he will kiss her in kindness.
+For when he takes his prey he plays with it to give it a chance.
+For one mouse in seven escapes by his dallying.
+For when his day's work is done his business more properly begins.
+For he keeps the Lord's watch in the night against the adversary.
+For he counteracts the powers of darkness by his electrical skin and glaring eyes.
+For he counteracts the Devil, who is death, by brisking about the life.
+For in his morning orisons he loves the sun and the sun loves him.
+For he is of the tribe of Tiger.
+For the Cherub Cat is a term of the Angel Tiger.
+For he has the subtlety and hissing of a serpent, which in goodness he suppresses.
+For he will not do destruction, if he is well-fed, neither will he spit without provocation.
+For he purrs in thankfulness, when God tells him he's a good Cat.
+For he is an instrument for the children to learn benevolence upon.
+For every house is incomplete without him and a blessing is lacking in the spirit.
+For the Lord commanded Moses concerning the cats at the departure of the Children of Israel from Egypt.
+For every family had one cat at least in the bag.
+For the English Cats are the best in Europe.
+For he is the cleanest in the use of his forepaws of any quadruped.
+For the dexterity of his defence is an instance of the love of God to him exceedingly.
+For he is the quickest to his mark of any creature.
+For he is tenacious of his point.
+For he is a mixture of gravity and waggery.
+For he knows that God is his Saviour.
+For there is nothing sweeter than his peace when at rest.
+For there is nothing brisker than his life when in motion.
+For he is of the Lord's poor and so indeed is he called by benevolence perpetually—Poor Jeoffry! poor Jeoffry! the rat has bit thy throat.
+For I bless the name of the Lord Jesus that Jeoffry is better.
+For the divine spirit comes about his body to sustain it in complete cat.
+For his tongue is exceeding pure so that it has in purity what it wants in music.
+For he is docile and can learn certain things.
+For he can set up with gravity which is patience upon approbation.
+For he can fetch and carry, which is patience in employment.
+For he can jump over a stick which is patience upon proof positive.
+For he can spraggle upon waggle at the word of command.
+For he can jump from an eminence into his master's bosom.
+For he can catch the cork and toss it again.
+For he is hated by the hypocrite and miser.
+For the former is afraid of detection.
+For the latter refuses the charge.
+For he camels his back to bear the first notion of business.
+For he is good to think on, if a man would express himself neatly.
+For he made a great figure in Egypt for his signal services.
+For he killed the Ichneumon-rat very pernicious by land.
+For his ears are so acute that they sting again.
+For from this proceeds the passing quickness of his attention.
+For by stroking of him I have found out electricity.
+For I perceived God's light about him both wax and fire.
+For the Electrical fire is the spiritual substance, which God sends from heaven to sustain the bodies both of man and beast.
+For God has blessed him in the variety of his movements.
+For, tho he cannot fly, he is an excellent clamberer.
+For his motions upon the face of the earth are more than any other quadruped.
+For he can tread to all the measures upon the music.
+For he can swim for life.
+For he can creep.
+
+]
+
+Source: <a href="https://www.poetryfoundation.org/poems/45173/jubilate-agno">Poetry Foundation</a>
+
+
+:: left {"position":"675,725","size":"100,100"}
+
+# Interpretations
+
+Rather than blithely following a narrative, you choose to make your own meaning. Congratulations! Let's practice some textual exegesis together, shall we? Starting with a poem:
+
+[[The Tyger]]
+
+(append: ?SideBar)[ Left ]
+
+
+
+:: lost {"position":"1025,550","size":"100,100"}
+(display: 'species') Poor little $species, have you lost your way?
+
+
+Go [[Home]]
+Go on a [[journey]]
+Do a [[Magic Trick|magictrick]]
+Make some [[choices|Choices]]
+See the [[menagerie]]
+Take a [[test]]
+Read (link:"Poetry")[
+[[The Tyger]] 
+[[Jubilate Agno|jubilate]]
+[[To Flush, My Dog|Flush]]
+[[The Animal]]]
+
+(display:"Footer")
+
+
+:: magictrick {"position":"825,475","size":"100,100"}
+(display:'species')
+
+<!--$species-->
+
+(display:'abracadabra')
+
+(after:4s)[=
+[What happened?]<c1|
+
+|hidden)[My spell has transformed you into a $species with bright $color eyes.
+
+(text-color:'magenta')[Didn't you want to be a $species?]
+
+[[Why yes, it's what I've always wanted!|journey]]
+[[No, but I suppose I'm fine with it.|journey]]
+[[No, let me choose another critter.|Choices]]
+(link: "No, turn me into something else.")[(set: $species to 0) (go-to:"magictrick")]
+[[Actually I'd prefer to remain a human, thanks.|Human]]
+]
+
+(click: ?c1)[(show:?hidden)]
+
+
+:: menagerie {"position":"1100,825","size":"100,100"}
+# Menagerie
+
+I'd like to introduce you to some cute animals.
+
+<img src="https://alicetmcgrath.com/pets/spock.JPG" width="300">
+[[Cat]]
+<img src="https://alicetmcgrath.com/pets/angel.jpg" width="300">
+[[Dog]]
+<img src="https://alicemcgrath.digital.brynmawr.edu/simple-site/images/janeway.jpg" width="300">
+[[Axolotl]]
+
+Which one is your favorite?
+
+
+:: right {"position":"925,750","size":"100,100"}
+(display: 'menagerie')
+
+
+:: species {"position":"1250,675","size":"100,100"}
+(if: $species is 0)[
+(set: $species to (either: "Capybara", "Wolf", "Giraffe", "Elephant", "Rhinocerous", "Tapir", "Aardvark", "Axolotl", "Lion", "Fox"))]
+(if: $color is 0)[
+(set: $color to (either: "periwinkle", "puce", "chartreuse", "chiffon", "lime green", "neon yellow", "violet"))]
+
+
+
+
+:: spell {"position":"425,500","size":"100,100"}
+
+(display:"abracadabra")
+
+(after:4s)[=
+
+[What happened?]<c1|
+
+|hidden)[]
+
+(click: ?c1)[(show:?hidden)]
+
+
+
+
+:: test {"position":"950,300","size":"100,100"}
+
+# Dashboard
+
+* Seing if Twine works well with markdown
+* How easy is it to include external links?
+* Maybe it's just modified syntax - asterisks instead of other things
+
+## Resources
+
+* <a href="https://twine2.neocities.org/">Harlowe documentation</a>
+* Twine Cookbook: https://twinery.org/cookbook/
+
+### Brain dump
+
+0. Twine functionality as a basic website builder
+0. Isn't someone going to make an obsidian modification that is like Twine?
+0. Could we just write everything in Markdown and would that make easier.
+0. Your Text Here
+0. Do I have to start with Zero?
+0. No, I have to use zero every time
+0. Is this form older than Markdown?
+
+
+
+:: thoughts {"position":"925,1000","size":"100,100"}
+# Your response
+
+(set: $comments to "")
+
+(input-box:2bind $comments,"X")
+
+[OK]<c3|
+
+|c4)[(if:$comments is "")[
+Don't you want to share your thoughts? (link:"Yes")[(hide:?c4)]
+](else: )[That's a great point! I also think $comments.
+
+I'm so glad that we agree.
+]
+
+]
+
+(click-rerun:?c3)[(show:?c4)]
+
+
