@@ -167,16 +167,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#use-conditionals" id="toc-use-conditionals" class="nav-link" data-scroll-target="#use-conditionals">Use conditionals</a></li>
   <li><a href="#navigation" id="toc-navigation" class="nav-link" data-scroll-target="#navigation">Navigation</a></li>
   </ul></li>
+  <li><a href="#publishing-guide" id="toc-publishing-guide" class="nav-link" data-scroll-target="#publishing-guide">Publishing guide</a>
+  <ul class="collapse">
+  <li><a href="#export-your-game-from-twine" id="toc-export-your-game-from-twine" class="nav-link" data-scroll-target="#export-your-game-from-twine">Export your game from Twine</a></li>
+  <li><a href="#deployment-using-dooo-or-haverford-sites" id="toc-deployment-using-dooo-or-haverford-sites" class="nav-link" data-scroll-target="#deployment-using-dooo-or-haverford-sites">Deployment using DoOO or Haverford Sites</a></li>
+  </ul></li>
   <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a>
   <ul class="collapse">
   <li><a href="#twine-tutorials" id="toc-twine-tutorials" class="nav-link" data-scroll-target="#twine-tutorials">Twine tutorials</a></li>
   <li><a href="#twine-game-examples" id="toc-twine-game-examples" class="nav-link" data-scroll-target="#twine-game-examples">Twine game examples</a></li>
   <li><a href="#other-tools-for-creative-coding" id="toc-other-tools-for-creative-coding" class="nav-link" data-scroll-target="#other-tools-for-creative-coding">Other tools for Creative Coding</a></li>
-  </ul></li>
-  <li><a href="#publishing-guide" id="toc-publishing-guide" class="nav-link" data-scroll-target="#publishing-guide">Publishing guide</a>
-  <ul class="collapse">
-  <li><a href="#export-your-game-from-twine" id="toc-export-your-game-from-twine" class="nav-link" data-scroll-target="#export-your-game-from-twine">Export your game from Twine</a></li>
-  <li><a href="#deployment-using-dooo-or-haverford-sites" id="toc-deployment-using-dooo-or-haverford-sites" class="nav-link" data-scroll-target="#deployment-using-dooo-or-haverford-sites">Deployment using DoOO or Haverford Sites</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -345,6 +345,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Because Twine is designed for games, there isn’t much built-in navigation. It can be helpful to use a header or footer to link to a page with more navigation links or guides if a player gets lost.</p>
 </section>
 </section>
+<section id="publishing-guide" class="level2">
+<h2 class="anchored" data-anchor-id="publishing-guide">Publishing guide</h2>
+<p>A twine game can be deployed to a web server so that others can play the game. There are many options for webhosting services – here are a few that are free to you:</p>
+<ul>
+<li>Bryn Mawr: <strong>Domain of One’s Own</strong> - <a href="https://digital.brynmawr.edu/">digital.brynmawr.edu</a></li>
+<li>Haverford: <strong>Haverford Sites</strong> - <a href="https://sites.haverford.edu/">sites.haverford.edu</a></li>
+<li>GitHub Pages - <a href="https://github.com/">github.com</a> - see <a href="https://docs.github.com/en/pages">GitHub Pages documentation</a> (free with GitHub account)</li>
+</ul>
+<section id="export-your-game-from-twine" class="level3">
+<h3 class="anchored" data-anchor-id="export-your-game-from-twine">Export your game from Twine</h3>
+<ul>
+<li>From the Twine top menu, go to <strong>Build</strong> -&gt; <strong>Publish to File</strong> to export your game as html</li>
+<li>Open it in a browser app to play it locally</li>
+<li>Note on Filenames:
+<ul>
+<li>By default, the filename of your game will include the title</li>
+<li>Edit the filename so it has no spaces in it - this will be part of your URL</li>
+<li><em>Pro tip</em>: change the filename to <code>index.html</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="deployment-using-dooo-or-haverford-sites" class="level3">
+<h3 class="anchored" data-anchor-id="deployment-using-dooo-or-haverford-sites">Deployment using DoOO or Haverford Sites</h3>
+<ul>
+<li>Navigate to <a href="https://digital.brynmawr.edu/">digital.brynmawr.edu</a> or <a href="https://sites.haverford.edu/">sites.haverford.edu</a> and click on “Get Started” to log in
+<ul>
+<li>If you haven’t already, choose a domain name that is relatively short and unique to you</li>
+</ul></li>
+<li>Upload your game:
+<ul>
+<li>From your Dashboard, locate the “File Manager”</li>
+<li>Navigate to the folder called “public_html”</li>
+<li>Create a new sub-folder called “game”</li>
+<li>Upload your game to the “game” folder</li>
+</ul></li>
+<li>Navigate to your game’s URL
+<ul>
+<li>Your game should now be public at <strong>yourdomain.digital.brynmawr.edu/game/filename.html</strong></li>
+<li>If you changed the filename to index, your url will be <strong>yourdomain.digital.brynmawr.edu/game</strong></li>
+</ul></li>
+</ul>
+</section>
+</section>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Resources</h2>
 <section id="twine-tutorials" class="level3">
@@ -394,50 +437,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Inform7</li>
 <li>Texture</li>
 <li>Hosted Games</li>
+<li>Bitsy</li>
 <li>Other options here: <a href="https://docs.google.com/document/d/1vIRlYDjwK7E8XufV5Cr0gYtmAvd0gWRORHF23JX28Ek/edit?tab=t.0">Tools and Resources for Making Games</a></li>
-</ul>
-</section>
-</section>
-<section id="publishing-guide" class="level2">
-<h2 class="anchored" data-anchor-id="publishing-guide">Publishing guide</h2>
-<p>A twine game can be deployed to a web server so that others can play the game. There are many options for webhosting services – here are a few that are free to you:</p>
-<ul>
-<li>Bryn Mawr: <strong>Domain of One’s Own</strong> - <a href="https://digital.brynmawr.edu/">digital.brynmawr.edu</a></li>
-<li>Haverford: <strong>Haverford Sites</strong> - <a href="https://sites.haverford.edu/">sites.haverford.edu</a></li>
-<li>GitHub Pages - <a href="https://github.com/">github.com</a> - see <a href="https://docs.github.com/en/pages">GitHub Pages documentation</a> (free with GitHub account)</li>
-</ul>
-<section id="export-your-game-from-twine" class="level3">
-<h3 class="anchored" data-anchor-id="export-your-game-from-twine">Export your game from Twine</h3>
-<ul>
-<li>From the Twine top menu, go to <strong>Build</strong> -&gt; <strong>Publish to File</strong> to export your game as html</li>
-<li>Open it in a browser app to play it locally</li>
-<li>Note on Filenames:
-<ul>
-<li>By default, the filename of your game will include the title</li>
-<li>Edit the filename so it has no spaces in it - this will be part of your URL</li>
-<li><em>Pro tip</em>: change the filename to <code>index.html</code></li>
-</ul></li>
-</ul>
-</section>
-<section id="deployment-using-dooo-or-haverford-sites" class="level3">
-<h3 class="anchored" data-anchor-id="deployment-using-dooo-or-haverford-sites">Deployment using DoOO or Haverford Sites</h3>
-<ul>
-<li>Navigate to <a href="https://digital.brynmawr.edu/">digital.brynmawr.edu</a> or <a href="https://sites.haverford.edu/">sites.haverford.edu</a> and click on “Get Started” to log in
-<ul>
-<li>If you haven’t already, choose a domain name that is relatively short and unique to you</li>
-</ul></li>
-<li>Upload your game:
-<ul>
-<li>From your Dashboard, locate the “File Manager”</li>
-<li>Navigate to the folder called “public_html”</li>
-<li>Create a new sub-folder called “game”</li>
-<li>Upload your game to the “game” folder</li>
-</ul></li>
-<li>Navigate to your game’s URL
-<ul>
-<li>Your game should now be public at <strong>yourdomain.digital.brynmawr.edu/game/filename.html</strong></li>
-<li>If you changed the filename to index, your url will be <strong>yourdomain.digital.brynmawr.edu/game</strong></li>
-</ul></li>
 </ul>
 
 
