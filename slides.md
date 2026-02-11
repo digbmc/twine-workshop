@@ -26,43 +26,53 @@ Twine and Hypertext
 
 ## Hypertext!
 
-- HTML = Hypertext Markup Language
-- Hypertext - interactive, multilinear, network-based
-- New experimental forms of fiction emerged in the early-mid 1990s, originally distributed via CD-Rom
-- Internal references in print book forms (i.e. footnotes and other paratext, Choose-your-own-adventure, etc.) had already done this, but suddenly it was possible at a new scale
+- Hypertext - context is created immediately with hyperlinks; networked structure that is multilinear
+- Similar technologies existed for print (i.e. footnotes, choose-your-own adventures, etc) but now it was easier
+- Experimental forms of literature using hypertext emerged in the early-mid 1990s, originally distributed via CD-Rom
+- HTML = hypertext markup language (all the internet)
+
 
 ::: {.notes}
 - While other book forms had been linear (scroll) or sequential but segmented (a book), hypertext was inherently multilinear, network-based, interactive
 - Fun fact: Vladimir Nabokov's *Pale Fire* (1962) was almost used to demonstrate an early hypertext system in an IBM presentation in 1969
 :::
 
-## Hypertext Literature
+## Hypertext Literature {.smaller}
 
 *Patchwork Girl: A Modern Monster* by Shelley Jackson (1995, Eastgate Systems)
 
-> "In hypertext, everything is there at once and equally weighted. It is a body whose brain is dispersed throughout the cells, fraught with potential, fragile with indecision, or rather strong in foregoing decisions, the way a vine will bend but a tree can fall down."
+> In hypertext, everything is there at once and equally weighted. It is a body whose brain is dispersed throughout the cells, fraught with potential, fragile with indecision, or rather strong in foregoing decisions, the way a vine will bend but a tree can fall down"
 
-- Jackson, "[Stitch Bitch: the patchwork girl](https://web.mit.edu/m-i-t/articles/jackson.html)", 1997 (qtd. in [Wikipedia](https://en.wikipedia.org/wiki/Patchwork_Girl_\(hypertext\)#cite_note-7))
+Shelley Jackson, "[Stitch Bitch: the patchwork girl](https://web.mit.edu/m-i-t/articles/jackson.html)", 1997 (qtd. in [Wikipedia](https://en.wikipedia.org/wiki/Patchwork_Girl_\(hypertext\)#cite_note-7))
 
 ## So what?
-- All of the internet is hypertext: context is created by hyperlinks that can be followed backwards and forwards and read in any order
-- [Twine](https://twinery.org/) is used to create interactive fiction and text-based games that evoke this early hypertext era
-- Rather than typical web navigation (e.g. menus, search bars), each bit of context in Twine is built intentionally
+- [**Twine**](https://twinery.org/) is an open-source tool for creating hypertext narratives, interactive fiction, text-based games
+- Twine stories evoke this early hypertext era: they are networks with interconnected nodes
+- All of the internet is hypertext, but most websites have open navigation technologies - each bit of context in Twine is built intentionally
+
+::: {.notes}
+- context is created by hyperlinks that can be followed backwards and forwards and read in any order
+- Twine: navigation is controlled, interactive
+:::
 
 ## [Twine](https://twinery.org/)
-- Open-source tool for creating interactive fiction, games, and hypertext narratives
-- Output is simple HTML (Hypertext Markup Language) that can be deployed on any web server
-- WYSIWYG editor that uses simple markup
+- Can be used in browser or as standalone application
+- Output is a flat HTML (Hypertext Markup Language) file
 - Editor interface shows connections between passages
-- Designed to emphasize interactivity (user-input, randomness, variables)
+- WYSIWYG editor that uses simple markup
+- Many options for interactivity (user input, randomness, variables) without advanced technical skill
 
-# Twine Editor Interface
+::: {.notes}
+- What's cool is that most no-code website builders do not include functional programming options
+- Instead of learning html and javascript, you get a little bit of the uses of each
+:::
+
+# Using Twine
 
 ## Before we begin
 - Story format options change syntax and functionality
 	- **Harlowe** - default format (this what we are using for this workshop).
 	- Other options: Chapbook (beginner-friendly), SugarCube, Snowman (advanced)
-- You can download the application or use it in browser (if you use it in browser, backup and save often)
 - Twine games are stored in a markup language called [Twee](https://twinery.org/cookbook/terms/terms_twee.html) and can be edited in a text editor
 
 ## Getting started
