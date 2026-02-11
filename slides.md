@@ -51,8 +51,8 @@ Twine and Hypertext
 
 ## [Twine](https://twinery.org/)
 - Open-source tool for creating interactive fiction, games, and hypertext narratives
-- Output is simple HTML (Hyper Text Markup Language) that can be deployed on any web server
-- No-code editor that uses simple markup
+- Output is simple HTML (Hypertext Markup Language) that can be deployed on any web server
+- WYSIWYG editor that uses simple markup
 - Editor interface shows connections between passages
 - Designed to emphasize interactivity (user-input, randomness, variables)
 
@@ -186,13 +186,24 @@ How to let others play your game
 
 Congratulations, you are a published author of interactive fiction!
 
-## Resources
+# Tips and Resources
+
+## Best Practices for Web Publishing {.smaller}
+
+- **Copyright, Credit, & Attribution** - Do not publish copyrighted material without permission: find licensing information for images and media. Credit your sources for media and data.
+- **Accessibility** - Use alternative text for images, high-contrast colors, and heading structures to make your content accessible to users with disabilities.
+- **Privacy & Permission** - Never publish a person’s photo, name, or any personal information without consent. Make sure all collaborators are represented the way they wish.
+- **Design & Style** - Think about your audience: try to make the presentation  eye-catching, organized, and easy to understand.
+- **Reviewing & User Testing** - Have someone else view  and interact with your content and build in time to fix any issues. Try different devices and browsers
+
+## Twine Documentation
 - [Twine Cookbook]([https://twinery.org/cookbook/](https://twinery.org/cookbook/))
-- Harlowe documentation: [https://twine2.neocities.org/](https://twine2.neocities.org/) - this is the standard story template
+- [Harlowe documentation](https://twine2.neocities.org/) - this is the standard story format
 - [Twine and Interactive Fiction Handbook (slides)](https://docs.google.com/presentation/d/1bNzxW39pYul2yVieuxaSsnB5SAexOde1Higr9mxs7EA/edit)
-- [Programming Historian: Interactive Text Games Using Twine](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine)
+- [Programming Historian: Interactive Text Games Using Twine (text tutorial)](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine)
 
 ## Get help!
 - Come to Digital Scholarship Office Hours, 1-3 PM in the Carpenter DMCL!
-- Email digitalscholarship@brynmawr.edu or help@brynmawr.edu
+- Email [digitalscholarship@brynmawr.edu](mailto:digitalscholarship@brynmawr.edu) or [help@brynmawr.edu](mailto:help@brynmawr.edu)
+- For questions about Domain of One's Own, see [AskAthena](https://askathena.brynmawr.edu/help/domain-of-ones-own)
 
