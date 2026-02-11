@@ -79,27 +79,30 @@ Twine and Hypertext
 - Use `**` for `**bold**` and `*` for `*italic*`
 - Use the WYSIWYG editor for other types of customizations
 
-## Vocabulary
+## Vocabulary {.smaller}
 
-- **Markup** - How data is structured, displayed, and organized (general term)
+- **Markup** - How data is structured, displayed, and organized
+- **Variable** - A container for values and words that can change within the game
 - **Story** - A Twine project (i.e. a website, game, or book)
-- **Passage** - A contained section of a Twine story that can be linked to
+- **Passage** - A contained section of a Twine story (a page or "node" in the network)
 - **Macro** - A bit of code used to change functionality or style of text, indicated with parentheses
 - **Hook** - The passage of text that a macro acts on, indicated with square brackets
-`(font: "Arial")[This text will be in Arial.]`
-- **Variable** - A container for values and words that can change within the game
-`(set: $myName to "Alice") Hello, $myName!`  
+```markdown
+(font: "Arial")[This text will be in Arial.]`
+```
 
 ## Tips
 
-- Preview your work often to make sure the functionality is what you want
-- If you are working in browser: export your game every time you are finished
+- Preview/test your work often to make sure everything works
+- When using the browser editor, export your game every time you are finished
 - Create an outline or storyboard before you try to build complex functionality
 - To check your story format: from the story editor, select 'Details' and select 'Harlowe 3.3.9'
 
 ## Your turn!
 
-Create a few passages and practice linking between them. Explore the editor interface options to try out more complex stuff.
+- Create a few passages and practice linking between them.
+- Test out your game to see how it looks.
+- Explore the editor interface options to try out more complex stuff.
 
 # Customization
 Make your Twine story pretty and interactive
@@ -118,8 +121,13 @@ Go to the [how-to](/#how-to) section of the home page for more
 
 ```md
 (link: "Click here please")[Thank you for clicking!]
-(display: "Cellar") <!-- Displays the passage "Cellar" in another passage -->
+(display: "Cellar")
+```
+```md
+(set: $points to 5)
 (set: $points to it + 1)
+```
+```md
 The weather was (either: "snowy", "rainy", "sunny")
 ```
 
@@ -131,9 +139,8 @@ The weather was (either: "snowy", "rainy", "sunny")
 
 ## Your turn!
 
-Give your game a makeover with some styling and customization.
-
-Need inspiration? Check out the [Digital Scholarship Adventure Game](https://digitalscholarship.brynmawr.edu/game/) or [Critters](https://alicetmcgrath.com/fun/)
+- Give your game a makeover with some styling and customization.
+- Need inspiration? Check out the [Digital Scholarship Adventure Game](https://digitalscholarship.brynmawr.edu/game/) or [Critters](https://alicetmcgrath.com/fun/)
 
 ## Advanced: HTML
 - Twine is designed to be text-based, however, you can add images using html if they are hosted somewhere else:
@@ -150,34 +157,34 @@ Need inspiration? Check out the [Digital Scholarship Adventure Game](https://dig
 # Deployment
 How to let others play your game
 
-## Options
+## Hosting options
 
-- Domain of One's Own - digital.brynmawr.edu - webhosting for BMC (Haverford Sites for HC)
-- GitHub Pages - github.com - 
+- Bryn Mawr: **Domain of One's Own** - [digital.brynmawr.edu](https://digital.brynmawr.edu/)
+- Haverford: **Haverford Sites** - [sites.haverford.edu](https://sites.haverford.edu/) 
+- [GitHub Pages](https://docs.github.com/en/pages) - with free GitHub account
 
-## Export your game
+## Export your story
 - From the Twine top menu, go to **Build** -> **Publish to File** to export your game as html
-- Open it in a browser app to play it locally
-
-## Filenames
-- By default, the filename of your game will include the title
-- Edit the filename so it has no spaces in it - this will be part of your URL
-- *Pro tip*: change the filename to `index.html`
+- **Filenames**: the html filename will be part of the URL for your game
+  - Edit the filename so it has no spaces in it
+  - If you change the filename to `index.html` your URL will just include the folder
+- You can open your story in a browser app to play it locally
 
 ## Log in to Domain of One's Own
 - Navigate to [digital.brynmawr.edu](https://digital.brynmawr.edu/) and click on "Get Started" to log in
 - If you haven't already, choose a domain name that is relatively short and unique
 
-## Upload your game
+## Upload your story
 - From your DoOO Dashboard, locate the "File Manager"
 - Navigate to the folder called "public_html"
 - Create a new sub-folder called "game"
 - Upload your game to the "game" folder
 
-## Sharing your game
-- Your game should now be public at [yourdomain.digital.brynmawr.edu/game/filename.html]()
+## Sharing your story
+- Your story should now be public at [yourdomain.digital.brynmawr.edu/game/filename.html]()
 - If you changed the filename to index, your url will be [yourdomain.digital.brynmawr.edu/game]()
-- Congratulations, you are a published author of interactive fiction!
+
+Congratulations, you are a published author of interactive fiction!
 
 ## Resources
 - [Twine Cookbook]([https://twinery.org/cookbook/](https://twinery.org/cookbook/))
