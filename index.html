@@ -149,7 +149,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to" id="toc-how-to" class="nav-link active" data-scroll-target="#how-to">How To</a>
+  <li><a href="#getting-started-with-twine" id="toc-getting-started-with-twine" class="nav-link active" data-scroll-target="#getting-started-with-twine">Getting started with Twine</a>
+  <ul class="collapse">
+  <li><a href="#about-twine" id="toc-about-twine" class="nav-link" data-scroll-target="#about-twine">About Twine</a></li>
+  <li><a href="#to-create-a-story-in-twine" id="toc-to-create-a-story-in-twine" class="nav-link" data-scroll-target="#to-create-a-story-in-twine">To create a story in Twine</a></li>
+  <li><a href="#basics" id="toc-basics" class="nav-link" data-scroll-target="#basics">Basics</a></li>
+  <li><a href="#vocabulary" id="toc-vocabulary" class="nav-link" data-scroll-target="#vocabulary">Vocabulary</a></li>
+  <li><a href="#tips" id="toc-tips" class="nav-link" data-scroll-target="#tips">Tips</a></li>
+  </ul></li>
+  <li><a href="#how-to" id="toc-how-to" class="nav-link" data-scroll-target="#how-to">How To</a>
   <ul class="collapse">
   <li><a href="#link-between-passages" id="toc-link-between-passages" class="nav-link" data-scroll-target="#link-between-passages">Link between passages</a></li>
   <li><a href="#style-your-text" id="toc-style-your-text" class="nav-link" data-scroll-target="#style-your-text">Style your text</a></li>
@@ -199,6 +207,66 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>2026.02.11</p>
 <p>Alice McGrath &amp; Cameron Boucher</p>
 <p><a href="./slides.html">View slideshow</a></p>
+<section id="getting-started-with-twine" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started-with-twine">Getting started with Twine</h2>
+<section id="about-twine" class="level3">
+<h3 class="anchored" data-anchor-id="about-twine">About <a href="https://twinery.org/">Twine</a></h3>
+<ul>
+<li>Open-source tool for creating interactive fiction, games, and hypertext narratives</li>
+<li>Output is simple HTML (Hyper Text Markup Language) that can be deployed on any web server</li>
+<li>No-code editor that uses simple markup</li>
+<li>Editor interface shows connections between passages</li>
+<li>Designed to emphasize interactivity (user-input, randomness, variables)</li>
+<li>Can be used in browser or in separate application</li>
+<li>Twine games are stored in a markup language called <a href="https://twinery.org/cookbook/terms/terms_twee.html">Twee</a> and can be edited in a text editor</li>
+<li>Story format options change syntax and functionality
+<ul>
+<li><strong>Harlowe</strong> - default format (this what we are using for this workshop).</li>
+<li>Other options: Chapbook (beginner-friendly), SugarCube, Snowman (advanced)</li>
+</ul></li>
+</ul>
+</section>
+<section id="to-create-a-story-in-twine" class="level3">
+<h3 class="anchored" data-anchor-id="to-create-a-story-in-twine">To create a story in Twine</h3>
+<ol type="1">
+<li>Navigate to <a href="https://twinery.org/">https://twinery.org/</a></li>
+<li>Click ‘Use in your browser’</li>
+<li>In the top-left corner, click <code>+ New</code> to create a new story. Give yours a name</li>
+<li>The editor has an overall map with a single passage – double click to edit</li>
+<li>Enter some text and rename your passage</li>
+<li>Click <code>Test From Here</code> to preview your game in a new tab</li>
+</ol>
+</section>
+<section id="basics" class="level3">
+<h3 class="anchored" data-anchor-id="basics">Basics</h3>
+<ul>
+<li>Link to a new passage using double square brackets <code>[[pasage name]]</code></li>
+<li>Use hash marks to create headers: <code># Header 1</code> and <code>## Header 2</code></li>
+<li>Use <code>**</code> for <code>**bold**</code> and <code>*</code> for <code>*italic*</code></li>
+<li>Use the WYSIWYG editor for other types of customizations</li>
+</ul>
+</section>
+<section id="vocabulary" class="level3">
+<h3 class="anchored" data-anchor-id="vocabulary">Vocabulary</h3>
+<ul>
+<li><strong>Markup</strong> - How data is structured, displayed, and organized (general term)</li>
+<li><strong>Story</strong> - A Twine project (i.e.&nbsp;a website, game, or book)</li>
+<li><strong>Passage</strong> - A contained section of a Twine story (a page or “node” in the network)</li>
+<li><strong>Macro</strong> - A bit of code used to change functionality or style of text, indicated with parentheses</li>
+<li><strong>Hook</strong> - The passage of text that a macro acts on, indicated with square brackets <code>(font: "Arial")[This text will be in Arial.]</code></li>
+<li><strong>Variable</strong> - A container for values and words that can change within the game <code>(set: $myName to "Alice") Hello, $myName!</code></li>
+</ul>
+</section>
+<section id="tips" class="level3">
+<h3 class="anchored" data-anchor-id="tips">Tips</h3>
+<ul>
+<li>Preview/test your work often to make sure everything works</li>
+<li>When using the browser editor, export your game every time you are finished</li>
+<li>Create an outline or storyboard before you try to build complex functionality</li>
+<li>To check your story format: from the story editor, select ‘Details’ and select ‘Harlowe 3.3.9’</li>
+</ul>
+</section>
+</section>
 <section id="how-to" class="level2">
 <h2 class="anchored" data-anchor-id="how-to">How To</h2>
 <p>Use this guide to make a few basic customizations. There are many more you can find in the <a href="https://twine2.neocities.org/">Harlowe Documentation</a> and the <a href="https://twinery.org/cookbook/">Twine Cookbook</a>.</p>

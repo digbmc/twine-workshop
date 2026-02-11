@@ -53,21 +53,21 @@
     "href": "slides.html#vocabulary",
     "title": "Creative Coding with Twine",
     "section": "Vocabulary",
-    "text": "Vocabulary\n\nMarkup - How data is structured, displayed, and organized (general term)\nStory - A Twine project (i.e. a website, game, or book)\nPassage - A contained section of a Twine story that can be linked to\nMacro - A bit of code used to change functionality or style of text, indicated with parentheses\nHook - The passage of text that a macro acts on, indicated with square brackets (font: \"Arial\")[This text will be in Arial.]\nVariable - A container for values and words that can change within the game (set: $myName to \"Alice\") Hello, $myName!"
+    "text": "Vocabulary\n\nMarkup - How data is structured, displayed, and organized\nVariable - A container for values and words that can change within the game\nStory - A Twine project (i.e. a website, game, or book)\nPassage - A contained section of a Twine story (a page or “node” in the network)\nMacro - A bit of code used to change functionality or style of text, indicated with parentheses\nHook - The passage of text that a macro acts on, indicated with square brackets\n\n(font: \"Arial\")[This text will be in Arial.]`"
   },
   {
     "objectID": "slides.html#tips",
     "href": "slides.html#tips",
     "title": "Creative Coding with Twine",
     "section": "Tips",
-    "text": "Tips\n\nPreview your work often to make sure the functionality is what you want\nIf you are working in browser: export your game every time you are finished\nCreate an outline or storyboard before you try to build complex functionality\nTo check your story format: from the story editor, select ‘Details’ and select ‘Harlowe 3.3.9’"
+    "text": "Tips\n\nPreview/test your work often to make sure everything works\nWhen using the browser editor, export your game every time you are finished\nCreate an outline or storyboard before you try to build complex functionality\nTo check your story format: from the story editor, select ‘Details’ and select ‘Harlowe 3.3.9’"
   },
   {
     "objectID": "slides.html#your-turn",
     "href": "slides.html#your-turn",
     "title": "Creative Coding with Twine",
     "section": "Your turn!",
-    "text": "Your turn!\nCreate a few passages and practice linking between them. Explore the editor interface options to try out more complex stuff."
+    "text": "Your turn!\n\nCreate a few passages and practice linking between them.\nTest out your game to see how it looks.\nExplore the editor interface options to try out more complex stuff."
   },
   {
     "objectID": "slides.html#macros",
@@ -81,7 +81,7 @@
     "href": "slides.html#usage-examples",
     "title": "Creative Coding with Twine",
     "section": "Usage examples",
-    "text": "Usage examples\nGo to the how-to section of the home page for more\n(link: \"Click here please\")[Thank you for clicking!]\n(display: \"Cellar\") &lt;!-- Displays the passage \"Cellar\" in another passage --&gt;\n(set: $points to it + 1)\nThe weather was (either: \"snowy\", \"rainy\", \"sunny\")"
+    "text": "Usage examples\nGo to the how-to section of the home page for more\n(link: \"Click here please\")[Thank you for clicking!]\n(display: \"Cellar\")\n(set: $points to 5)\n(set: $points to it + 1)\nThe weather was (either: \"snowy\", \"rainy\", \"sunny\")"
   },
   {
     "objectID": "slides.html#things-to-try",
@@ -95,7 +95,7 @@
     "href": "slides.html#your-turn-1",
     "title": "Creative Coding with Twine",
     "section": "Your turn!",
-    "text": "Your turn!\nGive your game a makeover with some styling and customization.\nNeed inspiration? Check out the Digital Scholarship Adventure Game or Critters"
+    "text": "Your turn!\n\nGive your game a makeover with some styling and customization.\nNeed inspiration? Check out the Digital Scholarship Adventure Game or Critters"
   },
   {
     "objectID": "slides.html#advanced-html",
@@ -112,25 +112,18 @@
     "text": "Advanced: Style\n\nIf you have some experience with CSS, you can apply style to the whole story by going to Story -&gt; Stylesheet\nUse CSS selectors tw-passage tw-story and tw-link to apply style changes to your entire site\nMacros are recommmended for this purpose see these instructions"
   },
   {
-    "objectID": "slides.html#options",
-    "href": "slides.html#options",
+    "objectID": "slides.html#hosting-options",
+    "href": "slides.html#hosting-options",
     "title": "Creative Coding with Twine",
-    "section": "Options",
-    "text": "Options\n\nDomain of One’s Own - digital.brynmawr.edu - webhosting for BMC (Haverford Sites for HC)\nGitHub Pages - github.com -"
+    "section": "Hosting options",
+    "text": "Hosting options\n\nBryn Mawr: Domain of One’s Own - digital.brynmawr.edu\nHaverford: Haverford Sites - sites.haverford.edu\nGitHub Pages - with free GitHub account"
   },
   {
-    "objectID": "slides.html#export-your-game",
-    "href": "slides.html#export-your-game",
+    "objectID": "slides.html#export-your-story",
+    "href": "slides.html#export-your-story",
     "title": "Creative Coding with Twine",
-    "section": "Export your game",
-    "text": "Export your game\n\nFrom the Twine top menu, go to Build -&gt; Publish to File to export your game as html\nOpen it in a browser app to play it locally"
-  },
-  {
-    "objectID": "slides.html#filenames",
-    "href": "slides.html#filenames",
-    "title": "Creative Coding with Twine",
-    "section": "Filenames",
-    "text": "Filenames\n\nBy default, the filename of your game will include the title\nEdit the filename so it has no spaces in it - this will be part of your URL\nPro tip: change the filename to index.html"
+    "section": "Export your story",
+    "text": "Export your story\n\nFrom the Twine top menu, go to Build -&gt; Publish to File to export your game as html\nFilenames: the html filename will be part of the URL for your game\n\nEdit the filename so it has no spaces in it\nIf you change the filename to index.html your URL will just include the folder\n\nYou can open your story in a browser app to play it locally"
   },
   {
     "objectID": "slides.html#log-in-to-domain-of-ones-own",
@@ -140,18 +133,18 @@
     "text": "Log in to Domain of One’s Own\n\nNavigate to digital.brynmawr.edu and click on “Get Started” to log in\nIf you haven’t already, choose a domain name that is relatively short and unique"
   },
   {
-    "objectID": "slides.html#upload-your-game",
-    "href": "slides.html#upload-your-game",
+    "objectID": "slides.html#upload-your-story",
+    "href": "slides.html#upload-your-story",
     "title": "Creative Coding with Twine",
-    "section": "Upload your game",
-    "text": "Upload your game\n\nFrom your DoOO Dashboard, locate the “File Manager”\nNavigate to the folder called “public_html”\nCreate a new sub-folder called “game”\nUpload your game to the “game” folder"
+    "section": "Upload your story",
+    "text": "Upload your story\n\nFrom your DoOO Dashboard, locate the “File Manager”\nNavigate to the folder called “public_html”\nCreate a new sub-folder called “game”\nUpload your game to the “game” folder"
   },
   {
-    "objectID": "slides.html#sharing-your-game",
-    "href": "slides.html#sharing-your-game",
+    "objectID": "slides.html#sharing-your-story",
+    "href": "slides.html#sharing-your-story",
     "title": "Creative Coding with Twine",
-    "section": "Sharing your game",
-    "text": "Sharing your game\n\nYour game should now be public at yourdomain.digital.brynmawr.edu/game/filename.html\nIf you changed the filename to index, your url will be yourdomain.digital.brynmawr.edu/game\nCongratulations, you are a published author of interactive fiction!"
+    "section": "Sharing your story",
+    "text": "Sharing your story\n\nYour story should now be public at yourdomain.digital.brynmawr.edu/game/filename.html\nIf you changed the filename to index, your url will be yourdomain.digital.brynmawr.edu/game\n\nCongratulations, you are a published author of interactive fiction!"
   },
   {
     "objectID": "slides.html#resources",
@@ -173,6 +166,13 @@
     "title": "Creative Coding with Twine",
     "section": "",
     "text": "Workshop for RUSS233 Experimental Literature\n2026.02.11\nAlice McGrath & Cameron Boucher\nView slideshow"
+  },
+  {
+    "objectID": "index.html#getting-started-with-twine",
+    "href": "index.html#getting-started-with-twine",
+    "title": "Creative Coding with Twine",
+    "section": "Getting started with Twine",
+    "text": "Getting started with Twine\n\nAbout Twine\n\nOpen-source tool for creating interactive fiction, games, and hypertext narratives\nOutput is simple HTML (Hyper Text Markup Language) that can be deployed on any web server\nNo-code editor that uses simple markup\nEditor interface shows connections between passages\nDesigned to emphasize interactivity (user-input, randomness, variables)\nCan be used in browser or in separate application\nTwine games are stored in a markup language called Twee and can be edited in a text editor\nStory format options change syntax and functionality\n\nHarlowe - default format (this what we are using for this workshop).\nOther options: Chapbook (beginner-friendly), SugarCube, Snowman (advanced)\n\n\n\n\nTo create a story in Twine\n\nNavigate to https://twinery.org/\nClick ‘Use in your browser’\nIn the top-left corner, click + New to create a new story. Give yours a name\nThe editor has an overall map with a single passage – double click to edit\nEnter some text and rename your passage\nClick Test From Here to preview your game in a new tab\n\n\n\nBasics\n\nLink to a new passage using double square brackets [[pasage name]]\nUse hash marks to create headers: # Header 1 and ## Header 2\nUse ** for **bold** and * for *italic*\nUse the WYSIWYG editor for other types of customizations\n\n\n\nVocabulary\n\nMarkup - How data is structured, displayed, and organized (general term)\nStory - A Twine project (i.e. a website, game, or book)\nPassage - A contained section of a Twine story (a page or “node” in the network)\nMacro - A bit of code used to change functionality or style of text, indicated with parentheses\nHook - The passage of text that a macro acts on, indicated with square brackets (font: \"Arial\")[This text will be in Arial.]\nVariable - A container for values and words that can change within the game (set: $myName to \"Alice\") Hello, $myName!\n\n\n\nTips\n\nPreview/test your work often to make sure everything works\nWhen using the browser editor, export your game every time you are finished\nCreate an outline or storyboard before you try to build complex functionality\nTo check your story format: from the story editor, select ‘Details’ and select ‘Harlowe 3.3.9’"
   },
   {
     "objectID": "index.html#how-to",

@@ -313,29 +313,34 @@ Alice McGrath &amp; Cameron Boucher
 <li>Use the WYSIWYG editor for other types of customizations</li>
 </ul>
 </section>
-<section id="vocabulary" class="slide level2">
+<section id="vocabulary" class="slide level2 smaller">
 <h2>Vocabulary</h2>
 <ul>
-<li><strong>Markup</strong> - How data is structured, displayed, and organized (general term)</li>
+<li><strong>Markup</strong> - How data is structured, displayed, and organized</li>
+<li><strong>Variable</strong> - A container for values and words that can change within the game</li>
 <li><strong>Story</strong> - A Twine project (i.e.&nbsp;a website, game, or book)</li>
-<li><strong>Passage</strong> - A contained section of a Twine story that can be linked to</li>
+<li><strong>Passage</strong> - A contained section of a Twine story (a page or “node” in the network)</li>
 <li><strong>Macro</strong> - A bit of code used to change functionality or style of text, indicated with parentheses</li>
-<li><strong>Hook</strong> - The passage of text that a macro acts on, indicated with square brackets <code>(font: "Arial")[This text will be in Arial.]</code></li>
-<li><strong>Variable</strong> - A container for values and words that can change within the game <code>(set: $myName to "Alice") Hello, $myName!</code></li>
+<li><strong>Hook</strong> - The passage of text that a macro acts on, indicated with square brackets</li>
 </ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a>(font: "Arial")<span class="co">[</span><span class="ot">This text will be in Arial.</span><span class="co">]</span>`</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="tips" class="slide level2">
 <h2>Tips</h2>
 <ul>
-<li>Preview your work often to make sure the functionality is what you want</li>
-<li>If you are working in browser: export your game every time you are finished</li>
+<li>Preview/test your work often to make sure everything works</li>
+<li>When using the browser editor, export your game every time you are finished</li>
 <li>Create an outline or storyboard before you try to build complex functionality</li>
 <li>To check your story format: from the story editor, select ‘Details’ and select ‘Harlowe 3.3.9’</li>
 </ul>
 </section>
 <section id="your-turn" class="slide level2">
 <h2>Your turn!</h2>
-<p>Create a few passages and practice linking between them. Explore the editor interface options to try out more complex stuff.</p>
+<ul>
+<li>Create a few passages and practice linking between them.</li>
+<li>Test out your game to see how it looks.</li>
+<li>Explore the editor interface options to try out more complex stuff.</li>
+</ul>
 </section></section>
 <section>
 <section id="customization" class="title-slide slide level1 center">
@@ -354,10 +359,11 @@ Alice McGrath &amp; Cameron Boucher
 <section id="usage-examples" class="slide level2">
 <h2>Usage examples</h2>
 <p>Go to the <a href="./#how-to">how-to</a> section of the home page for more</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a>(link: "Click here please")<span class="co">[</span><span class="ot">Thank you for clicking!</span><span class="co">]</span></span>
-<span id="cb1-2"><a></a>(display: "Cellar") <span class="co">&lt;!-- Displays the passage "Cellar" in another passage --&gt;</span></span>
-<span id="cb1-3"><a></a>(set: $points to it + 1)</span>
-<span id="cb1-4"><a></a>The weather was (either: "snowy", "rainy", "sunny")</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a>(link: "Click here please")<span class="co">[</span><span class="ot">Thank you for clicking!</span><span class="co">]</span></span>
+<span id="cb2-2"><a></a>(display: "Cellar")</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a>(set: $points to 5)</span>
+<span id="cb3-2"><a></a>(set: $points to it + 1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a>The weather was (either: "snowy", "rainy", "sunny")</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="things-to-try" class="slide level2">
 <h2>Things to try</h2>
@@ -370,15 +376,17 @@ Alice McGrath &amp; Cameron Boucher
 </section>
 <section id="your-turn-1" class="slide level2">
 <h2>Your turn!</h2>
-<p>Give your game a makeover with some styling and customization.</p>
-<p>Need inspiration? Check out the <a href="https://digitalscholarship.brynmawr.edu/game/">Digital Scholarship Adventure Game</a> or <a href="https://alicetmcgrath.com/fun/">Critters</a></p>
+<ul>
+<li>Give your game a makeover with some styling and customization.</li>
+<li>Need inspiration? Check out the <a href="https://digitalscholarship.brynmawr.edu/game/">Digital Scholarship Adventure Game</a> or <a href="https://alicetmcgrath.com/fun/">Critters</a></li>
+</ul>
 </section>
 <section id="advanced-html" class="slide level2">
 <h2>Advanced: HTML</h2>
 <ul>
 <li>Twine is designed to be text-based, however, you can add images using html if they are hosted somewhere else:</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"exampleurl.com/cat.jpg"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">"a cat in a box"</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb5-1"><a></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"exampleurl.com/cat.jpg"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">"a cat in a box"</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Other HTML syntax may work (but will sometimes break)</li>
 </ul>
@@ -396,26 +404,24 @@ Alice McGrath &amp; Cameron Boucher
 <h1>Deployment</h1>
 <p>How to let others play your game</p>
 </section>
-<section id="options" class="slide level2">
-<h2>Options</h2>
+<section id="hosting-options" class="slide level2">
+<h2>Hosting options</h2>
 <ul>
-<li>Domain of One’s Own - digital.brynmawr.edu - webhosting for BMC (Haverford Sites for HC)</li>
-<li>GitHub Pages - github.com -</li>
+<li>Bryn Mawr: <strong>Domain of One’s Own</strong> - <a href="https://digital.brynmawr.edu/">digital.brynmawr.edu</a></li>
+<li>Haverford: <strong>Haverford Sites</strong> - <a href="https://sites.haverford.edu/">sites.haverford.edu</a></li>
+<li><a href="https://docs.github.com/en/pages">GitHub Pages</a> - with free GitHub account</li>
 </ul>
 </section>
-<section id="export-your-game" class="slide level2">
-<h2>Export your game</h2>
+<section id="export-your-story" class="slide level2">
+<h2>Export your story</h2>
 <ul>
 <li>From the Twine top menu, go to <strong>Build</strong> -&gt; <strong>Publish to File</strong> to export your game as html</li>
-<li>Open it in a browser app to play it locally</li>
-</ul>
-</section>
-<section id="filenames" class="slide level2">
-<h2>Filenames</h2>
+<li><strong>Filenames</strong>: the html filename will be part of the URL for your game
 <ul>
-<li>By default, the filename of your game will include the title</li>
-<li>Edit the filename so it has no spaces in it - this will be part of your URL</li>
-<li><em>Pro tip</em>: change the filename to <code>index.html</code></li>
+<li>Edit the filename so it has no spaces in it</li>
+<li>If you change the filename to <code>index.html</code> your URL will just include the folder</li>
+</ul></li>
+<li>You can open your story in a browser app to play it locally</li>
 </ul>
 </section>
 <section id="log-in-to-domain-of-ones-own" class="slide level2">
@@ -425,8 +431,8 @@ Alice McGrath &amp; Cameron Boucher
 <li>If you haven’t already, choose a domain name that is relatively short and unique</li>
 </ul>
 </section>
-<section id="upload-your-game" class="slide level2">
-<h2>Upload your game</h2>
+<section id="upload-your-story" class="slide level2">
+<h2>Upload your story</h2>
 <ul>
 <li>From your DoOO Dashboard, locate the “File Manager”</li>
 <li>Navigate to the folder called “public_html”</li>
@@ -434,13 +440,13 @@ Alice McGrath &amp; Cameron Boucher
 <li>Upload your game to the “game” folder</li>
 </ul>
 </section>
-<section id="sharing-your-game" class="slide level2">
-<h2>Sharing your game</h2>
+<section id="sharing-your-story" class="slide level2">
+<h2>Sharing your story</h2>
 <ul>
-<li>Your game should now be public at <a href="">yourdomain.digital.brynmawr.edu/game/filename.html</a></li>
+<li>Your story should now be public at <a href="">yourdomain.digital.brynmawr.edu/game/filename.html</a></li>
 <li>If you changed the filename to index, your url will be <a href="">yourdomain.digital.brynmawr.edu/game</a></li>
-<li>Congratulations, you are a published author of interactive fiction!</li>
 </ul>
+<p>Congratulations, you are a published author of interactive fiction!</p>
 </section>
 <section id="resources" class="slide level2">
 <h2>Resources</h2>
