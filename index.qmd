@@ -215,6 +215,7 @@ A twine game can be deployed to a web server so that others can play the game. T
   - To view the code, click on either file (e.g. "Critters.twee")
   - To download, use the download icon
   - You can import the Twee code into Twine to see what it looks like in the editor
+- [Life of Pasha](https://cboucher01.github.io/life-of-pasha/) - A day in the life of Pasha, the betta fish (by Cameron Boucher)
 
 #### Examples in the wild
 
