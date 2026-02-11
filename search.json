@@ -25,7 +25,7 @@
     "href": "slides.html#twine",
     "title": "Creative Coding with Twine",
     "section": "Twine",
-    "text": "Twine\n\nOpen-source tool for creating interactive fiction, games, and hypertext narratives\nOutput is simple HTML (Hyper Text Markup Language) that can be deployed on any web server\nNo-code editor that uses simple markup\nEditor interface shows connections between passages\nDesigned to emphasize interactivity (user-input, randomness, variables)"
+    "text": "Twine\n\nOpen-source tool for creating interactive fiction, games, and hypertext narratives\nOutput is simple HTML (Hypertext Markup Language) that can be deployed on any web server\nWYSIWYG editor that uses simple markup\nEditor interface shows connections between passages\nDesigned to emphasize interactivity (user-input, randomness, variables)"
   },
   {
     "objectID": "slides.html#before-we-begin",
@@ -147,18 +147,25 @@
     "text": "Sharing your story\n\nYour story should now be public at yourdomain.digital.brynmawr.edu/game/filename.html\nIf you changed the filename to index, your url will be yourdomain.digital.brynmawr.edu/game\n\nCongratulations, you are a published author of interactive fiction!"
   },
   {
-    "objectID": "slides.html#resources",
-    "href": "slides.html#resources",
+    "objectID": "slides.html#best-practices-for-web-publishing",
+    "href": "slides.html#best-practices-for-web-publishing",
     "title": "Creative Coding with Twine",
-    "section": "Resources",
-    "text": "Resources\n\nTwine Cookbook\nHarlowe documentation: https://twine2.neocities.org/ - this is the standard story template\nTwine and Interactive Fiction Handbook (slides)\nProgramming Historian: Interactive Text Games Using Twine"
+    "section": "Best Practices for Web Publishing",
+    "text": "Best Practices for Web Publishing\n\nCopyright, Credit, & Attribution - Do not publish copyrighted material without permission: find licensing information for images and media. Credit your sources for media and data.\nAccessibility - Use alternative text for images, high-contrast colors, and heading structures to make your content accessible to users with disabilities.\nPrivacy & Permission - Never publish a person’s photo, name, or any personal information without consent. Make sure all collaborators are represented the way they wish.\nDesign & Style - Think about your audience: try to make the presentation eye-catching, organized, and easy to understand.\nReviewing & User Testing - Have someone else view and interact with your content and build in time to fix any issues. Try different devices and browsers"
+  },
+  {
+    "objectID": "slides.html#twine-documentation",
+    "href": "slides.html#twine-documentation",
+    "title": "Creative Coding with Twine",
+    "section": "Twine Documentation",
+    "text": "Twine Documentation\n\nTwine Cookbook\nHarlowe documentation - this is the standard story format\nTwine and Interactive Fiction Handbook (slides)\nProgramming Historian: Interactive Text Games Using Twine (text tutorial)"
   },
   {
     "objectID": "slides.html#get-help",
     "href": "slides.html#get-help",
     "title": "Creative Coding with Twine",
     "section": "Get help!",
-    "text": "Get help!\n\nCome to Digital Scholarship Office Hours, 1-3 PM in the Carpenter DMCL!\nEmail digitalscholarship@brynmawr.edu or help@brynmawr.edu"
+    "text": "Get help!\n\nCome to Digital Scholarship Office Hours, 1-3 PM in the Carpenter DMCL!\nEmail digitalscholarship@brynmawr.edu or help@brynmawr.edu\nFor questions about Domain of One’s Own, see AskAthena"
   },
   {
     "objectID": "index.html",
@@ -172,7 +179,7 @@
     "href": "index.html#getting-started-with-twine",
     "title": "Creative Coding with Twine",
     "section": "Getting started with Twine",
-    "text": "Getting started with Twine\n\nAbout Twine\n\nOpen-source tool for creating interactive fiction, games, and hypertext narratives\nOutput is simple HTML (Hyper Text Markup Language) that can be deployed on any web server\nNo-code editor that uses simple markup\nEditor interface shows connections between passages\nDesigned to emphasize interactivity (user-input, randomness, variables)\nCan be used in browser or in separate application\nTwine games are stored in a markup language called Twee and can be edited in a text editor\nStory format options change syntax and functionality\n\nHarlowe - default format (this what we are using for this workshop).\nOther options: Chapbook (beginner-friendly), SugarCube, Snowman (advanced)\n\n\n\n\nTo create a story in Twine\n\nNavigate to https://twinery.org/\nClick ‘Use in your browser’\nIn the top-left corner, click + New to create a new story. Give yours a name\nThe editor has an overall map with a single passage – double click to edit\nEnter some text and rename your passage\nClick Test From Here to preview your game in a new tab\n\n\n\nBasics\n\nLink to a new passage using double square brackets [[pasage name]]\nUse hash marks to create headers: # Header 1 and ## Header 2\nUse ** for **bold** and * for *italic*\nUse the WYSIWYG editor for other types of customizations\n\n\n\nVocabulary\n\nMarkup - How data is structured, displayed, and organized (general term)\nStory - A Twine project (i.e. a website, game, or book)\nPassage - A contained section of a Twine story (a page or “node” in the network)\nMacro - A bit of code used to change functionality or style of text, indicated with parentheses\nHook - The passage of text that a macro acts on, indicated with square brackets (font: \"Arial\")[This text will be in Arial.]\nVariable - A container for values and words that can change within the game (set: $myName to \"Alice\") Hello, $myName!\n\n\n\nTips\n\nPreview/test your work often to make sure everything works\nWhen using the browser editor, export your game every time you are finished\nCreate an outline or storyboard before you try to build complex functionality\nTo check your story format: from the story editor, select ‘Details’ and select ‘Harlowe 3.3.9’"
+    "text": "Getting started with Twine\n\nAbout Twine\n\nTwine is an open-source tool for creating interactive fiction, text-based games, and hypertext narratives\nTwine has a no-code editor that uses simple markup, shows connections between passages as a network, and can be used in browser or as a standalone application\nTwine games are stored in a markup language called Twee and can be edited in a text editor\nTwine is designed to emphasize interactivity (user-input, randomness, variables)\nStory format options change syntax and functionality\n\nHarlowe - default format (this what we are using for this workshop).\nOther options: Chapbook (beginner-friendly), SugarCube, Snowman (advanced)\n\n\n\n\nTo create a story in Twine\n\nNavigate to https://twinery.org/\nClick ‘Use in your browser’\nIn the top-left corner, click + New to create a new story. Give yours a name\nThe editor has an overall map with a single passage – double click to edit\nEnter some text and rename your passage\nClick Test From Here to preview your game in a new tab\n\n\n\nBasics\n\nLink to a new passage using double square brackets [[pasage name]]\nUse hash marks to create headers: # Header 1 and ## Header 2\nUse ** for **bold** and * for *italic*\nUse the WYSIWYG editor for other types of customizations\n\n\n\nVocabulary\n\nMarkup - How data is structured, displayed, and organized (general term)\nStory - A Twine project (i.e. a website, game, or book)\nPassage - A contained section of a Twine story (a page or “node” in the network)\nMacro - A bit of code used to change functionality or style of text, indicated with parentheses\nHook - The passage of text that a macro acts on, indicated with square brackets (font: \"Arial\")[This text will be in Arial.]\nVariable - A container for values and words that can change within the game (set: $myName to \"Alice\") Hello, $myName!\n\n\n\nTips\n\nPreview/test your work often to make sure everything works\nWhen using the browser editor, export your game every time you are finished\nCreate an outline or storyboard before you try to build complex functionality\nTo check your story format: from the story editor, select ‘Details’ and select ‘Harlowe 3.3.9’"
   },
   {
     "objectID": "index.html#how-to",
@@ -186,7 +193,7 @@
     "href": "index.html#resources",
     "title": "Creative Coding with Twine",
     "section": "Resources",
-    "text": "Resources\n\nTwine tutorials\nNB: If you are using a tutorial, make sure you know which story format it describes because syntax can be quite different\n\nTwine Cookbook\nHarlowe documentation - this is the standard story template\nTwine and Interactive Fiction Handbook (slides)\nProgramming Historian: Interactive Text Games Using Twine\nA Total Beginner’s Guide to Twine 2.1 (videos)\n\n\n\nTwine game examples\n\nWorkshop examples\n\nDigital Scholarship Adventure Game (live) - an educational game to learn about digital scholarship services at Bryn Mawr\nCritters (live) - a short and goofy game for this workshop\nTwee code for both games is available on the GitHub for this workshop\n\nTo view the code, click on either file (e.g. “Critters.twee”)\nTo download, use the download icon\nYou can import the Twee code into Twine to see what it looks like in the editor\n\n\n\n\nExamples in the wild\n\nSeptember 7th, 2020 by Cait S. Kirby\nDepression Quest by Zoe Quinn\nFirst Day in the Office by Gabi Kirilloff\nOpen Sorcery and its sequel Open Sorcery Sea++ by Abigail Corfman\n16 Ways to Kill a Vampire at McDonalds by Abigail Corfman\nQueers in Love at the End of the World by Anna Anthropy\nExplore many more on itch.io: Twine games on itch.io\n\n\n\n\nOther tools for Creative Coding\n\nInform7\nTexture\nHosted Games\nOther options here: Tools and Resources for Making Games"
+    "text": "Resources\n\nTwine tutorials\nNB: If you are using a tutorial, make sure you know which story format it describes because syntax can be quite different. My guides refer to Harlowe.\n\nTwine Cookbook\nHarlowe documentation - this is the standard story format\nTwine and Interactive Fiction Handbook (slides)\nProgramming Historian: Interactive Text Games Using Twine\nA Total Beginner’s Guide to Twine 2.1 (videos)\n\n\n\nTwine game examples\n\nWorkshop examples\n\nDigital Scholarship Adventure Game (live) - an educational game to learn about digital scholarship services at Bryn Mawr\nCritters (live) - a short and goofy game for this workshop\nTwee code for both games is available on the GitHub for this workshop\n\nTo view the code, click on either file (e.g. “Critters.twee”)\nTo download, use the download icon\nYou can import the Twee code into Twine to see what it looks like in the editor\n\n\n\n\nExamples in the wild\n\nSeptember 7th, 2020 by Cait S. Kirby\nDepression Quest by Zoe Quinn\nDead Reference and Bot or Not by Sam Illingworth\nFirst Day in the Office by Gabi Kirilloff\nTyping Challenge by Daniel Linssen\nOpen Sorcery and its sequel Open Sorcery Sea++ by Abigail Corfman\n16 Ways to Kill a Vampire at McDonalds by Abigail Corfman\nQueers in Love at the End of the World by Anna Anthropy\nExplore many more on itch.io: Twine games on itch.io\n\n\n\n\nOther tools for Creative Coding\n\nInform7\nTexture\nHosted Games\nOther options here: Tools and Resources for Making Games"
   },
   {
     "objectID": "index.html#publishing-guide",
