@@ -71,13 +71,17 @@ Harlowe uses macros to style text, following this basic syntax:
 ```markdown
 (text-style:"fade-in-out")[This text blinks]
 
-(color:pink)[This text is pink]
+(color:magenta)[This text is magenta]
 
 (text-rotate-z:90)[This text is rotated 90 degrees]
 
 (bg:green)[This text has a green background]
 
-(color:green)+(font:"courier")[This text has two style macros applied]
+(font:"courier")[This text uses a different font]
+
+(text-size:0.5)[This text is smaller than other text]
+
+(align:"=><=")+(box:"X")[This text is centered]
 ```
 
 For style that will refer to the entire passage, use an open bracket at the end:
@@ -85,12 +89,29 @@ For style that will refer to the entire passage, use an open bracket at the end:
 ```markdown
 (color:cyan)[=
     The rest of the passage will be cyan
+```
 
+Macros can be nested inside other macros. To include two macros that apply to the same passage, use a `+` between them:
+
+```markdown
+(color:green)+(font:"courier")[This text has two style macros applied]
 ```
 
 You can also style the entire page using "enchant" macros:
 
 `(enchant:?page,(bg:lime))`
+
+
+#### Color and Font options
+
+- **Colors** 
+  - Twine supports a few colors without quotation marks -- you'll find these as options in the Editor. 
+  - You can also use any of the [CSS named colors](https://www.w3schools.com/cssref/css_colors.php) by putting the name in quotation marks: `(bg:"blueviolet")`. 
+  - You can also use hex values to specify a color: `(text-color: #cce6ff)[This is a hex value color]`.
+- **Fonts**
+  - Twine supports basic [websafe fonts](https://www.w3schools.com/cssref/css_websafe_fonts.php) that are well-supported across browsers. 
+  - It is also possible to [load Google Fonts following these instructions](https://twinery.org/cookbook/googlefonts/harlowe/harlowe_googlefonts.html), though this requires using CSS. 
+
 
 ### Hide and show content
 
@@ -196,8 +217,8 @@ A twine game can be deployed to a web server so that others can play the game. T
 ## Resources
 
 ### CSS Guides
-- Colors: [W3 named colors list](https://www.w3schools.com/cssref/css_colors.php)
-- Web-safe fonts: [W3 fonts](https://www.w3schools.com/cssref/css_websafe_fonts.php)
+- Colors: [W3 schools named colors list](https://www.w3schools.com/cssref/css_colors.php)
+- Web-safe fonts: [W3 schools fonts](https://www.w3schools.com/cssref/css_websafe_fonts.php)
 
 ### Twine tutorials
 
